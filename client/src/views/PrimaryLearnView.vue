@@ -19,7 +19,8 @@ const committedWords = ref<{ ch: string; ok: boolean }[][]>([])
 const celebrating = ref(false)
 
 const speechToken = ref(0)
-const speechRepeat = ref(3)
+/** 朗读次数固定为 3 次（已移除界面配置） */
+const SPEECH_REPEAT = 3
 const speechGapMs = ref(1200)
 const speechRate = ref(0.72)
 
@@ -71,7 +72,7 @@ async function speakPhrase(text: string, repeat = 3, gapMs = 1200) {
 
 function speakAgain() {
   const t = currentPhrase.value?.text
-  if (t) speakPhrase(t, speechRepeat.value, speechGapMs.value)
+  if (t) speakPhrase(t, SPEECH_REPEAT, speechGapMs.value)
 }
 
 function resetWordBuffer() {
@@ -206,7 +207,7 @@ watch(
     resetWordBuffer()
     committedWords.value = []
     const t = currentPhrase.value?.text
-    if (t) speakPhrase(t, speechRepeat.value, speechGapMs.value)
+    if (t) speakPhrase(t, SPEECH_REPEAT, speechGapMs.value)
   },
 )
 
@@ -214,7 +215,7 @@ onMounted(async () => {
   try {
     lesson.value = await fetchLesson(props.lessonId)
     const t = currentPhrase.value?.text
-    if (t) speakPhrase(t, speechRepeat.value, speechGapMs.value)
+    if (t) speakPhrase(t, SPEECH_REPEAT, speechGapMs.value)
   } catch (e) {
     loadError.value = e instanceof Error ? e.message : '加载失败'
   }
@@ -246,25 +247,15 @@ const progressLabel = computed(() => {
   <div class="learn" tabindex="-1">
     <header class="top-bar">
       <div class="top-bar__left">
-        <RouterLink to="/" class="back">← 首页</RouterLink>
+        <RouterLink to="/" class="nav-back">← 首页</RouterLink>
       </div>
       <div class="top-bar__center">
         <span v-if="lesson" class="lesson-title">{{ lesson.title }}</span>
       </div>
-      <div v-if="lesson" class="top-bar__right speech-config" aria-label="读音设置">
-        <label class="speech-config__item">
-          <span class="speech-config__lbl">朗读</span>
-          <select v-model.number="speechRepeat" class="speech-config__select">
-            <option :value="1">1 次</option>
-            <option :value="2">2 次</option>
-            <option :value="3">3 次</option>
-            <option :value="4">4 次</option>
-            <option :value="5">5 次</option>
-          </select>
-        </label>
-        <label class="speech-config__item">
-          <span class="speech-config__lbl">间隔</span>
-          <select v-model.number="speechGapMs" class="speech-config__select">
+      <div v-if="lesson" class="top-bar__right" aria-label="读音设置">
+        <label class="control-field">
+          <span class="control-field__label">间隔</span>
+          <select v-model.number="speechGapMs" class="control-field__select">
             <option :value="800">0.8s</option>
             <option :value="1000">1.0s</option>
             <option :value="1200">1.2s</option>
@@ -272,9 +263,9 @@ const progressLabel = computed(() => {
             <option :value="2000">2.0s</option>
           </select>
         </label>
-        <label class="speech-config__item">
-          <span class="speech-config__lbl">读速</span>
-          <select v-model.number="speechRate" class="speech-config__select">
+        <label class="control-field">
+          <span class="control-field__label">读速</span>
+          <select v-model.number="speechRate" class="control-field__select">
             <option :value="0.55">慢</option>
             <option :value="0.72">中</option>
             <option :value="0.88">快</option>
@@ -395,47 +386,6 @@ const progressLabel = computed(() => {
   font-weight: 600;
   color: var(--text-h);
   letter-spacing: -0.02em;
-}
-
-.back {
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 0.88rem;
-  font-weight: 500;
-}
-
-.back:hover {
-  text-decoration: underline;
-}
-
-.speech-config__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.72rem;
-  color: var(--text);
-  opacity: 0.92;
-}
-
-.speech-config__lbl {
-  white-space: nowrap;
-  opacity: 0.75;
-}
-
-.speech-config__select {
-  font: inherit;
-  font-size: 0.78rem;
-  padding: 0.28rem 0.4rem;
-  border-radius: 8px;
-  border: 1px solid #bbf7d0;
-  background: #ffffff;
-  color: #1f2937;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08);
-}
-
-.speech-config__select:hover {
-  border-color: var(--accent-border);
 }
 
 @media (max-width: 560px) {
@@ -711,7 +661,7 @@ const progressLabel = computed(() => {
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.88);
+  background: transparent;
 }
 
 .firework {
