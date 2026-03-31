@@ -151,10 +151,13 @@ onMounted(async () => {
 
 <style scoped>
 .home {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
   padding: 1rem 1rem 2rem;
+  padding-bottom: max(2rem, env(safe-area-inset-bottom, 0px));
   max-width: 64rem;
   margin: 0 auto;
-  min-height: 100%;
   box-sizing: border-box;
 }
 

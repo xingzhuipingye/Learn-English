@@ -74,9 +74,14 @@ async function onRegister() {
 
 <style scoped>
 .login {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
   padding: 1.5rem 1rem 2rem;
+  padding-bottom: max(2rem, env(safe-area-inset-bottom, 0px));
   max-width: 24rem;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .hero {

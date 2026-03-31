@@ -151,9 +151,12 @@ onUnmounted(() => {
 
 <style scoped>
 .listen {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
   padding: 1rem 1rem 2.5rem;
+  padding-bottom: max(2.5rem, env(safe-area-inset-bottom, 0px));
   outline: none;
-  min-height: 100%;
   box-sizing: border-box;
   background:
     radial-gradient(circle at 8% 10%, rgba(34, 197, 94, 0.12), transparent 45%),

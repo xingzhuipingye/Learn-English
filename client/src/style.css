@@ -50,8 +50,25 @@
   }
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  min-height: 100%;
+  min-height: 100dvh;
+  min-height: 100svh;
+}
+
+#app {
+  margin: 0;
+  min-height: 100%;
+  min-height: 100dvh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 /* 全局：返回首页（与学习页、后续子页统一） */
@@ -251,12 +268,6 @@ code {
     transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
       scale(0.8);
   }
-}
-
-#app {
-  margin: 0;
-  min-height: 100svh;
-  box-sizing: border-box;
 }
 
 #center {

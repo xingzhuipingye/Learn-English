@@ -33,6 +33,9 @@ let stageBumpTimer: ReturnType<typeof setTimeout> | null = null
 const wordShake = ref(false)
 let wordShakeTimer: ReturnType<typeof setTimeout> | null = null
 
+/** 移动端必须通过真实 input 聚焦才能呼出软键盘；桌面端也统一由此接收按键 */
+const tapInputRef = ref<HTMLInputElement | null>(null)
+
 const currentSentence = computed(() => lesson.value?.sentences[sentenceIndex.value] ?? null)
 const currentPhrase = computed((): LessonPhrase | null => {
   const s = currentSentence.value
@@ -160,6 +163,44 @@ function checkWordComplete() {
   advanceWord()
 }
 
+function clearTapInput() {
+  const el = tapInputRef.value
+  if (el) el.value = ''
+}
+
+function focusTapInput() {
+  nextTick(() => {
+    tapInputRef.value?.focus({ preventScroll: true })
+  })
+}
+
+function tryBackspace() {
+  typed.value = typed.value.slice(0, -1)
+  if (hitFlashTimer) {
+    clearTimeout(hitFlashTimer)
+    hitFlash.value = null
+  }
+}
+
+/** 输入一个已校验的字符（与 keydown / input 共用） */
+function tryAppendChar(keyChar: string) {
+  if (celebrating.value || !lesson.value) return
+  const raw = getAcceptableKey(keyChar)
+  if (!raw) return
+
+  const expected = currentExpectedWord.value
+  if (!expected) return
+  if (typed.value.length >= expected.length) return
+
+  const idx = typed.value.length
+  const ok = expected[idx] === normalizeKeyForMatch(raw)
+  typed.value = [...typed.value, { ch: raw, ok }]
+  triggerHitFlash(wordIndex.value, idx, ok ? 'ok' : 'bad')
+  triggerStageBump()
+  if (!ok) triggerWordShake()
+  nextTick(() => checkWordComplete())
+}
+
 /** 仅接受单键字母数字；展示用原始大小写，不参与强转 */
 function getAcceptableKey(k: string) {
   if (k.length !== 1) return null
@@ -173,35 +214,41 @@ function normalizeKeyForMatch(k: string) {
   return k
 }
 
-function onKeyDown(e: KeyboardEvent) {
+function onTapKeyDown(e: KeyboardEvent) {
   if (celebrating.value || !lesson.value) return
   if (e.metaKey || e.ctrlKey || e.altKey) return
 
   if (e.key === 'Backspace') {
     e.preventDefault()
-    typed.value = typed.value.slice(0, -1)
-    if (hitFlashTimer) {
-      clearTimeout(hitFlashTimer)
-      hitFlash.value = null
-    }
+    tryBackspace()
     return
   }
 
   const raw = getAcceptableKey(e.key)
   if (!raw) return
 
-  const expected = currentExpectedWord.value
-  if (!expected) return
-  if (typed.value.length >= expected.length) return
-
   e.preventDefault()
-  const idx = typed.value.length
-  const ok = expected[idx] === normalizeKeyForMatch(raw)
-  typed.value = [...typed.value, { ch: raw, ok }]
-  triggerHitFlash(wordIndex.value, idx, ok ? 'ok' : 'bad')
-  triggerStageBump()
-  if (!ok) triggerWordShake()
-  nextTick(() => checkWordComplete())
+  tryAppendChar(e.key)
+  nextTick(() => clearTapInput())
+}
+
+/** 粘贴等多字符输入（单字由 keydown + preventDefault 处理，避免重复） */
+function onTapInput(e: Event) {
+  const el = e.target as HTMLInputElement
+  const v = el.value
+  if (!v || celebrating.value || !lesson.value) {
+    el.value = ''
+    return
+  }
+  if (v.length <= 1) {
+    el.value = ''
+    return
+  }
+  el.value = ''
+  for (const ch of v) {
+    tryAppendChar(ch)
+  }
+  nextTick(() => clearTapInput())
 }
 
 function getCharAt(wordIdx: number, charIdx: number) {
@@ -223,6 +270,7 @@ watch(
     committedWords.value = []
     const t = currentPhrase.value?.text
     if (t) speakPhrase(t, SPEECH_REPEAT, speechGapMs.value)
+    focusTapInput()
   },
 )
 
@@ -235,12 +283,11 @@ onMounted(async () => {
   } catch (e) {
     loadError.value = e instanceof Error ? e.message : '加载失败'
   }
-  window.addEventListener('keydown', onKeyDown)
+  focusTapInput()
 })
 
 onUnmounted(() => {
   speechToken.value += 1
-  window.removeEventListener('keydown', onKeyDown)
   window.speechSynthesis?.cancel()
   if (hitFlashTimer) clearTimeout(hitFlashTimer)
   if (stageBumpTimer) clearTimeout(stageBumpTimer)
@@ -296,7 +343,10 @@ const progressLabel = computed(() => {
     <p v-if="loadError" class="err">{{ loadError }}</p>
 
     <template v-else-if="lesson">
-      <p class="hint-mini">按顺序输入词组中每个单词；字母对错会标色。</p>
+      <p class="hint-mini">
+        按顺序输入词组中每个单词；字母对错会标色。
+        <span class="hint-mini__mobile">手机请先点下方字母区呼出键盘。</span>
+      </p>
       <p v-if="lesson.textbook" class="textbook-hint">{{ lesson.textbook }}</p>
       <p class="progress">{{ progressLabel }}</p>
 
@@ -313,31 +363,48 @@ const progressLabel = computed(() => {
           </button>
         </div>
 
-        <div class="stage__slots" role="textbox" aria-label="输入显示区">
-          <span
-            v-for="(word, wIdx) in typingWords"
-            :key="`${wIdx}-${word}`"
-            class="word-slot"
-            :class="{
-              active: wIdx === wordIndex,
-              'word-slot--shake': wIdx === wordIndex && wordShake,
-            }"
-          >
+        <div class="stage__slots" role="group" aria-label="输入区">
+          <input
+            ref="tapInputRef"
+            class="stage__tap-input"
+            type="text"
+            inputmode="text"
+            enterkeyhint="done"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            aria-label="输入单词字母"
+            @keydown="onTapKeyDown"
+            @input="onTapInput"
+            @click="focusTapInput"
+          />
+          <div class="stage__slots-visual" aria-hidden="true">
             <span
-              v-for="(_, cIdx) in Array.from(word)"
-              :key="cIdx"
-              class="slot-ch"
+              v-for="(word, wIdx) in typingWords"
+              :key="`${wIdx}-${word}`"
+              class="word-slot"
               :class="{
-                ok: getCharAt(wIdx, cIdx)?.ok === true,
-                bad: getCharAt(wIdx, cIdx)?.ok === false,
-                'slot-ch--empty': !getCharAt(wIdx, cIdx),
-                'slot-ch--pop': isFlashSlot(wIdx, cIdx, 'ok'),
-                'slot-ch--flash-bad': isFlashSlot(wIdx, cIdx, 'bad'),
+                active: wIdx === wordIndex,
+                'word-slot--shake': wIdx === wordIndex && wordShake,
               }"
             >
-              {{ getCharAt(wIdx, cIdx)?.ch ?? '\u00a0' }}
+              <span
+                v-for="(_, cIdx) in Array.from(word)"
+                :key="cIdx"
+                class="slot-ch"
+                :class="{
+                  ok: getCharAt(wIdx, cIdx)?.ok === true,
+                  bad: getCharAt(wIdx, cIdx)?.ok === false,
+                  'slot-ch--empty': !getCharAt(wIdx, cIdx),
+                  'slot-ch--pop': isFlashSlot(wIdx, cIdx, 'ok'),
+                  'slot-ch--flash-bad': isFlashSlot(wIdx, cIdx, 'bad'),
+                }"
+              >
+                {{ getCharAt(wIdx, cIdx)?.ch ?? '\u00a0' }}
+              </span>
             </span>
-          </span>
+          </div>
         </div>
       </section>
     </template>
@@ -360,9 +427,12 @@ const progressLabel = computed(() => {
 
 <style scoped>
 .learn {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
   padding: 1rem 1rem 2.5rem;
+  padding-bottom: max(2.5rem, env(safe-area-inset-bottom, 0px));
   outline: none;
-  min-height: 100%;
   box-sizing: border-box;
   background:
     radial-gradient(circle at 8% 10%, rgba(34, 197, 94, 0.12), transparent 45%),
@@ -447,6 +517,17 @@ const progressLabel = computed(() => {
   color: var(--text);
   opacity: 0.55;
   text-align: center;
+}
+
+.hint-mini__mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hint-mini__mobile {
+    display: block;
+    margin-top: 0.3rem;
+    opacity: 0.85;
+  }
 }
 
 .textbook-hint {
@@ -538,14 +619,42 @@ const progressLabel = computed(() => {
 }
 
 .stage__slots {
+  position: relative;
+  min-height: 3.25rem;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+  font-size: clamp(1.05rem, 2.8vw, 1.28rem);
+}
+
+.stage__tap-input {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 48px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  opacity: 0.02;
+  background: rgba(0, 0, 0, 0.02);
+  caret-color: transparent;
+  color: transparent;
+  touch-action: manipulation;
+}
+
+.stage__slots-visual {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
   gap: 1rem 1.25rem;
   min-height: 3rem;
-  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
-  font-size: clamp(1.05rem, 2.8vw, 1.28rem);
+  width: 100%;
+  pointer-events: none;
 }
 
 .word-slot {
@@ -634,7 +743,7 @@ const progressLabel = computed(() => {
     gap: 0.8rem;
   }
 
-  .stage__slots {
+  .stage__slots-visual {
     gap: 0.75rem 0.8rem;
   }
 
