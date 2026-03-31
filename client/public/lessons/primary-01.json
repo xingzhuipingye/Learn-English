@@ -1,0 +1,27 @@
+{
+  "id": "primary-01",
+  "module": "primary",
+  "title": "A Sunny Day",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "The sun is bright today.",
+          "words": ["The", "sun", "is", "bright", "today."]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "We play in the park.",
+          "words": ["We", "play", "in", "the", "park."]
+        }
+      ]
+    }
+  ]
+}
