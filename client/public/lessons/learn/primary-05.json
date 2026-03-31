@@ -1,0 +1,39 @@
+{
+  "id": "primary-05",
+  "module": "primary",
+  "title": "Let's Eat!",
+  "chapter": "三上 Unit 5",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 5",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Have some bread.",
+          "words": [
+            "Have",
+            "some",
+            "bread."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I drink milk every day.",
+          "words": [
+            "I",
+            "drink",
+            "milk",
+            "every",
+            "day."
+          ]
+        }
+      ]
+    }
+  ]
+}

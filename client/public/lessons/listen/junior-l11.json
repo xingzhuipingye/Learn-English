@@ -1,0 +1,75 @@
+{
+  "id": "junior-l11",
+  "module": "junior",
+  "title": "How Often Do You Exercise? · 听力",
+  "chapter": "八上 Unit 2",
+  "textbook": "风格参考：人教版《英语》八年级上册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "I use the Internet every day.",
+      "correct": "Internet",
+      "choices": [
+        "Internet",
+        "Interest",
+        "Interview",
+        "Internal"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "She hardly ever plays games.",
+      "correct": "hardly",
+      "choices": [
+        "hardly",
+        "hardy",
+        "nearly",
+        "really"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Once a month is enough.",
+      "correct": "month",
+      "choices": [
+        "month",
+        "mouth",
+        "moth",
+        "mount"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Junk food is bad for health.",
+      "correct": "health",
+      "choices": [
+        "health",
+        "healthy",
+        "wealth",
+        "hearth"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "My lifestyle is quite healthy.",
+      "correct": "lifestyle",
+      "choices": [
+        "lifestyle",
+        "lifetime",
+        "live",
+        "lift"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "We should get enough sleep.",
+      "correct": "sleep",
+      "choices": [
+        "sleep",
+        "slip",
+        "sheep",
+        "steep"
+      ]
+    }
+  ]
+}

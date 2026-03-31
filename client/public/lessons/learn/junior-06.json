@@ -1,0 +1,40 @@
+{
+  "id": "junior-06",
+  "module": "junior",
+  "title": "Do You Like Bananas?",
+  "chapter": "七上 Unit 6",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 6",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Do you like bananas?",
+          "words": [
+            "Do",
+            "you",
+            "like",
+            "bananas?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I like apples and salad.",
+          "words": [
+            "I",
+            "like",
+            "apples",
+            "and",
+            "salad."
+          ]
+        }
+      ]
+    }
+  ]
+}

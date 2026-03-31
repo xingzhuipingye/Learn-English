@@ -1,0 +1,75 @@
+{
+  "id": "junior-l02",
+  "module": "junior",
+  "title": "This Is My Sister · 听力",
+  "chapter": "七上 Unit 2",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "That is my brother.",
+      "correct": "brother",
+      "choices": [
+        "brother",
+        "mother",
+        "father",
+        "sister"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Here is a photo of my family.",
+      "correct": "photo",
+      "choices": [
+        "photo",
+        "phone",
+        "picture",
+        "piano"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Who is the girl?",
+      "correct": "girl",
+      "choices": [
+        "girl",
+        "goal",
+        "golf",
+        "guard"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "They are my cousins.",
+      "correct": "cousins",
+      "choices": [
+        "cousins",
+        "cousin",
+        "causes",
+        "courses"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "My aunt works in a hospital.",
+      "correct": "aunt",
+      "choices": [
+        "aunt",
+        "ant",
+        "and",
+        "end"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "The baby is only two.",
+      "correct": "baby",
+      "choices": [
+        "baby",
+        "body",
+        "busy",
+        "maybe"
+      ]
+    }
+  ]
+}

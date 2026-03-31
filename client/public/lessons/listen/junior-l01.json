@@ -1,0 +1,75 @@
+{
+  "id": "junior-l01",
+  "module": "junior",
+  "title": "Good Morning! · 听力",
+  "chapter": "七上 Unit 1",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "My name is Alan.",
+      "correct": "name",
+      "choices": [
+        "name",
+        "game",
+        "same",
+        "late"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Nice to meet you too.",
+      "correct": "meet",
+      "choices": [
+        "meet",
+        "meat",
+        "mean",
+        "meal"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "What is this in English?",
+      "correct": "English",
+      "choices": [
+        "English",
+        "England",
+        "language",
+        "orange"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Spell it, please.",
+      "correct": "Spell",
+      "choices": [
+        "Spell",
+        "Sell",
+        "Still",
+        "Spill"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "The quilt is purple.",
+      "correct": "purple",
+      "choices": [
+        "purple",
+        "people",
+        "puple",
+        "paper"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "I can say the letters.",
+      "correct": "letters",
+      "choices": [
+        "letters",
+        "leaders",
+        "liters",
+        "lettuce"
+      ]
+    }
+  ]
+}

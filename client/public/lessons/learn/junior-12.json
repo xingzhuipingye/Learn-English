@@ -1,0 +1,44 @@
+{
+  "id": "junior-12",
+  "module": "junior",
+  "title": "Could You Please Clean Your Room?",
+  "chapter": "八年级 Unit 3",
+  "textbook": "风格参考：人教版《英语》八年级下册 · Unit 3",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Could you please take out the rubbish?",
+          "words": [
+            "Could",
+            "you",
+            "please",
+            "take",
+            "out",
+            "the",
+            "rubbish?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I will fold the clothes later.",
+          "words": [
+            "I",
+            "will",
+            "fold",
+            "the",
+            "clothes",
+            "later."
+          ]
+        }
+      ]
+    }
+  ]
+}

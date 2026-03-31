@@ -1,0 +1,47 @@
+{
+  "id": "senior-04",
+  "module": "senior",
+  "title": "Sports and Fitness",
+  "chapter": "必修一 Unit 3",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 3",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Regular exercise keeps both body and mind healthy.",
+          "words": [
+            "Regular",
+            "exercise",
+            "keeps",
+            "both",
+            "body",
+            "and",
+            "mind",
+            "healthy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "The coach advised us to warm up first.",
+          "words": [
+            "The",
+            "coach",
+            "advised",
+            "us",
+            "to",
+            "warm",
+            "up",
+            "first."
+          ]
+        }
+      ]
+    }
+  ]
+}

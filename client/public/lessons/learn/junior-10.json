@@ -1,0 +1,44 @@
+{
+  "id": "junior-10",
+  "module": "junior",
+  "title": "Where Did You Go on Vacation?",
+  "chapter": "八上 Unit 1",
+  "textbook": "风格参考：人教版《英语》八年级上册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "I went to the mountains with my family.",
+          "words": [
+            "I",
+            "went",
+            "to",
+            "the",
+            "mountains",
+            "with",
+            "my",
+            "family."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "It was sunny and warm.",
+          "words": [
+            "It",
+            "was",
+            "sunny",
+            "and",
+            "warm."
+          ]
+        }
+      ]
+    }
+  ]
+}

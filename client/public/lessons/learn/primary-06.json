@@ -1,0 +1,39 @@
+{
+  "id": "primary-06",
+  "module": "primary",
+  "title": "Happy Birthday!",
+  "chapter": "三上 Unit 6",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 6",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "How old are you?",
+          "words": [
+            "How",
+            "old",
+            "are",
+            "you?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I'm six years old.",
+          "words": [
+            "I'm",
+            "six",
+            "years",
+            "old."
+          ]
+        }
+      ]
+    }
+  ]
+}

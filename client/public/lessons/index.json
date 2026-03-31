@@ -2,7 +2,721 @@
   {
     "id": "primary-01",
     "module": "primary",
-    "title": "A Sunny Day",
-    "sentenceCount": 2
+    "title": "Hello!",
+    "kind": "learn",
+    "chapter": "三上 Unit 1",
+    "order": 1,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 1"
+  },
+  {
+    "id": "primary-l01",
+    "module": "primary",
+    "title": "Hello! · 听力",
+    "kind": "listening",
+    "chapter": "三上 Unit 1",
+    "order": 1,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 1"
+  },
+  {
+    "id": "primary-02",
+    "module": "primary",
+    "title": "Colours",
+    "kind": "learn",
+    "chapter": "三上 Unit 2",
+    "order": 2,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 2"
+  },
+  {
+    "id": "primary-l02",
+    "module": "primary",
+    "title": "Colours · 听力",
+    "kind": "listening",
+    "chapter": "三上 Unit 2",
+    "order": 2,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 2"
+  },
+  {
+    "id": "primary-03",
+    "module": "primary",
+    "title": "Look at Me!",
+    "kind": "learn",
+    "chapter": "三上 Unit 3",
+    "order": 3,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 3"
+  },
+  {
+    "id": "primary-l03",
+    "module": "primary",
+    "title": "Look at Me! · 听力",
+    "kind": "listening",
+    "chapter": "三上 Unit 3",
+    "order": 3,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 3"
+  },
+  {
+    "id": "primary-04",
+    "module": "primary",
+    "title": "We Love Animals",
+    "kind": "learn",
+    "chapter": "三上 Unit 4",
+    "order": 4,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 4"
+  },
+  {
+    "id": "primary-l04",
+    "module": "primary",
+    "title": "We Love Animals · 听力",
+    "kind": "listening",
+    "chapter": "三上 Unit 4",
+    "order": 4,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 4"
+  },
+  {
+    "id": "primary-05",
+    "module": "primary",
+    "title": "Let's Eat!",
+    "kind": "learn",
+    "chapter": "三上 Unit 5",
+    "order": 5,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 5"
+  },
+  {
+    "id": "primary-l05",
+    "module": "primary",
+    "title": "Let's Eat! · 听力",
+    "kind": "listening",
+    "chapter": "三上 Unit 5",
+    "order": 5,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 5"
+  },
+  {
+    "id": "primary-06",
+    "module": "primary",
+    "title": "Happy Birthday!",
+    "kind": "learn",
+    "chapter": "三上 Unit 6",
+    "order": 6,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 6"
+  },
+  {
+    "id": "primary-l06",
+    "module": "primary",
+    "title": "Happy Birthday! · 听力",
+    "kind": "listening",
+    "chapter": "三上 Unit 6",
+    "order": 6,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 6"
+  },
+  {
+    "id": "primary-07",
+    "module": "primary",
+    "title": "Welcome Back to School",
+    "kind": "learn",
+    "chapter": "三下 Unit 1",
+    "order": 7,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 1"
+  },
+  {
+    "id": "primary-l07",
+    "module": "primary",
+    "title": "Welcome Back to School · 听力",
+    "kind": "listening",
+    "chapter": "三下 Unit 1",
+    "order": 7,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 1"
+  },
+  {
+    "id": "primary-08",
+    "module": "primary",
+    "title": "My Family",
+    "kind": "learn",
+    "chapter": "三下 Unit 2",
+    "order": 8,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 2"
+  },
+  {
+    "id": "primary-l08",
+    "module": "primary",
+    "title": "My Family · 听力",
+    "kind": "listening",
+    "chapter": "三下 Unit 2",
+    "order": 8,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 2"
+  },
+  {
+    "id": "primary-09",
+    "module": "primary",
+    "title": "My Classroom",
+    "kind": "learn",
+    "chapter": "四上 Unit 1",
+    "order": 9,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 1"
+  },
+  {
+    "id": "primary-l09",
+    "module": "primary",
+    "title": "My Classroom · 听力",
+    "kind": "listening",
+    "chapter": "四上 Unit 1",
+    "order": 9,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 1"
+  },
+  {
+    "id": "primary-10",
+    "module": "primary",
+    "title": "My Schoolbag",
+    "kind": "learn",
+    "chapter": "四上 Unit 2",
+    "order": 10,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 2"
+  },
+  {
+    "id": "primary-l10",
+    "module": "primary",
+    "title": "My Schoolbag · 听力",
+    "kind": "listening",
+    "chapter": "四上 Unit 2",
+    "order": 10,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 2"
+  },
+  {
+    "id": "primary-11",
+    "module": "primary",
+    "title": "My Friends",
+    "kind": "learn",
+    "chapter": "四上 Unit 3",
+    "order": 11,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 3"
+  },
+  {
+    "id": "primary-l11",
+    "module": "primary",
+    "title": "My Friends · 听力",
+    "kind": "listening",
+    "chapter": "四上 Unit 3",
+    "order": 11,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 3"
+  },
+  {
+    "id": "primary-12",
+    "module": "primary",
+    "title": "What's He Like?",
+    "kind": "learn",
+    "chapter": "五上 Unit 1",
+    "order": 12,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版（PEP）五年级上册 · Unit 1"
+  },
+  {
+    "id": "primary-l12",
+    "module": "primary",
+    "title": "What's He Like? · 听力",
+    "kind": "listening",
+    "chapter": "五上 Unit 1",
+    "order": 12,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版（PEP）五年级上册 · Unit 1"
+  },
+  {
+    "id": "junior-01",
+    "module": "junior",
+    "title": "Good Morning!",
+    "kind": "learn",
+    "chapter": "七上 Unit 1",
+    "order": 1,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 1"
+  },
+  {
+    "id": "junior-l01",
+    "module": "junior",
+    "title": "Good Morning! · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 1",
+    "order": 1,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 1"
+  },
+  {
+    "id": "junior-02",
+    "module": "junior",
+    "title": "This Is My Sister",
+    "kind": "learn",
+    "chapter": "七上 Unit 2",
+    "order": 2,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 2"
+  },
+  {
+    "id": "junior-l02",
+    "module": "junior",
+    "title": "This Is My Sister · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 2",
+    "order": 2,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 2"
+  },
+  {
+    "id": "junior-03",
+    "module": "junior",
+    "title": "Is This Your Pencil?",
+    "kind": "learn",
+    "chapter": "七上 Unit 3",
+    "order": 3,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 3"
+  },
+  {
+    "id": "junior-l03",
+    "module": "junior",
+    "title": "Is This Your Pencil? · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 3",
+    "order": 3,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 3"
+  },
+  {
+    "id": "junior-04",
+    "module": "junior",
+    "title": "Where's My Schoolbag?",
+    "kind": "learn",
+    "chapter": "七上 Unit 4",
+    "order": 4,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 4"
+  },
+  {
+    "id": "junior-l04",
+    "module": "junior",
+    "title": "Where's My Schoolbag? · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 4",
+    "order": 4,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 4"
+  },
+  {
+    "id": "junior-05",
+    "module": "junior",
+    "title": "Do You Have a Soccer Ball?",
+    "kind": "learn",
+    "chapter": "七上 Unit 5",
+    "order": 5,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 5"
+  },
+  {
+    "id": "junior-l05",
+    "module": "junior",
+    "title": "Do You Have a Soccer Ball? · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 5",
+    "order": 5,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 5"
+  },
+  {
+    "id": "junior-06",
+    "module": "junior",
+    "title": "Do You Like Bananas?",
+    "kind": "learn",
+    "chapter": "七上 Unit 6",
+    "order": 6,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 6"
+  },
+  {
+    "id": "junior-l06",
+    "module": "junior",
+    "title": "Do You Like Bananas? · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 6",
+    "order": 6,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 6"
+  },
+  {
+    "id": "junior-07",
+    "module": "junior",
+    "title": "How Much Are These Socks?",
+    "kind": "learn",
+    "chapter": "七上 Unit 7",
+    "order": 7,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 7"
+  },
+  {
+    "id": "junior-l07",
+    "module": "junior",
+    "title": "How Much Are These Socks? · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 7",
+    "order": 7,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 7"
+  },
+  {
+    "id": "junior-08",
+    "module": "junior",
+    "title": "When Is Your Birthday?",
+    "kind": "learn",
+    "chapter": "七上 Unit 8",
+    "order": 8,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 8"
+  },
+  {
+    "id": "junior-l08",
+    "module": "junior",
+    "title": "When Is Your Birthday? · 听力",
+    "kind": "listening",
+    "chapter": "七上 Unit 8",
+    "order": 8,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级上册 · Unit 8"
+  },
+  {
+    "id": "junior-09",
+    "module": "junior",
+    "title": "Can You Play the Guitar?",
+    "kind": "learn",
+    "chapter": "七下 Unit 1",
+    "order": 9,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》七年级下册 · Unit 1"
+  },
+  {
+    "id": "junior-l09",
+    "module": "junior",
+    "title": "Can You Play the Guitar? · 听力",
+    "kind": "listening",
+    "chapter": "七下 Unit 1",
+    "order": 9,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》七年级下册 · Unit 1"
+  },
+  {
+    "id": "junior-10",
+    "module": "junior",
+    "title": "Where Did You Go on Vacation?",
+    "kind": "learn",
+    "chapter": "八上 Unit 1",
+    "order": 10,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》八年级上册 · Unit 1"
+  },
+  {
+    "id": "junior-l10",
+    "module": "junior",
+    "title": "Where Did You Go on Vacation? · 听力",
+    "kind": "listening",
+    "chapter": "八上 Unit 1",
+    "order": 10,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》八年级上册 · Unit 1"
+  },
+  {
+    "id": "junior-11",
+    "module": "junior",
+    "title": "How Often Do You Exercise?",
+    "kind": "learn",
+    "chapter": "八上 Unit 2",
+    "order": 11,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》八年级上册 · Unit 2"
+  },
+  {
+    "id": "junior-l11",
+    "module": "junior",
+    "title": "How Often Do You Exercise? · 听力",
+    "kind": "listening",
+    "chapter": "八上 Unit 2",
+    "order": 11,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》八年级上册 · Unit 2"
+  },
+  {
+    "id": "junior-12",
+    "module": "junior",
+    "title": "Could You Please Clean Your Room?",
+    "kind": "learn",
+    "chapter": "八年级 Unit 3",
+    "order": 12,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版《英语》八年级下册 · Unit 3"
+  },
+  {
+    "id": "junior-l12",
+    "module": "junior",
+    "title": "Could You Please Clean Your Room? · 听力",
+    "kind": "listening",
+    "chapter": "八年级 Unit 3",
+    "order": 12,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版《英语》八年级下册 · Unit 3"
+  },
+  {
+    "id": "senior-01",
+    "module": "senior",
+    "title": "First Week at Senior High",
+    "kind": "learn",
+    "chapter": "必修一 Welcome Unit",
+    "order": 1,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Welcome Unit"
+  },
+  {
+    "id": "senior-l01",
+    "module": "senior",
+    "title": "First Week at Senior High · 听力",
+    "kind": "listening",
+    "chapter": "必修一 Welcome Unit",
+    "order": 1,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Welcome Unit"
+  },
+  {
+    "id": "senior-02",
+    "module": "senior",
+    "title": "Teenage Life",
+    "kind": "learn",
+    "chapter": "必修一 Unit 1",
+    "order": 2,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 1"
+  },
+  {
+    "id": "senior-l02",
+    "module": "senior",
+    "title": "Teenage Life · 听力",
+    "kind": "listening",
+    "chapter": "必修一 Unit 1",
+    "order": 2,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 1"
+  },
+  {
+    "id": "senior-03",
+    "module": "senior",
+    "title": "Travelling Around",
+    "kind": "learn",
+    "chapter": "必修一 Unit 2",
+    "order": 3,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 2"
+  },
+  {
+    "id": "senior-l03",
+    "module": "senior",
+    "title": "Travelling Around · 听力",
+    "kind": "listening",
+    "chapter": "必修一 Unit 2",
+    "order": 3,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 2"
+  },
+  {
+    "id": "senior-04",
+    "module": "senior",
+    "title": "Sports and Fitness",
+    "kind": "learn",
+    "chapter": "必修一 Unit 3",
+    "order": 4,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 3"
+  },
+  {
+    "id": "senior-l04",
+    "module": "senior",
+    "title": "Sports and Fitness · 听力",
+    "kind": "listening",
+    "chapter": "必修一 Unit 3",
+    "order": 4,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 3"
+  },
+  {
+    "id": "senior-05",
+    "module": "senior",
+    "title": "Natural Disasters",
+    "kind": "learn",
+    "chapter": "必修一 Unit 4",
+    "order": 5,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 4"
+  },
+  {
+    "id": "senior-l05",
+    "module": "senior",
+    "title": "Natural Disasters · 听力",
+    "kind": "listening",
+    "chapter": "必修一 Unit 4",
+    "order": 5,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 4"
+  },
+  {
+    "id": "senior-06",
+    "module": "senior",
+    "title": "Languages Around the World",
+    "kind": "learn",
+    "chapter": "必修一 Unit 5",
+    "order": 6,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 5"
+  },
+  {
+    "id": "senior-l06",
+    "module": "senior",
+    "title": "Languages Around the World · 听力",
+    "kind": "listening",
+    "chapter": "必修一 Unit 5",
+    "order": 6,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 5"
+  },
+  {
+    "id": "senior-07",
+    "module": "senior",
+    "title": "Cultural Heritage",
+    "kind": "learn",
+    "chapter": "必修二 Unit 1",
+    "order": 7,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 1"
+  },
+  {
+    "id": "senior-l07",
+    "module": "senior",
+    "title": "Cultural Heritage · 听力",
+    "kind": "listening",
+    "chapter": "必修二 Unit 1",
+    "order": 7,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 1"
+  },
+  {
+    "id": "senior-08",
+    "module": "senior",
+    "title": "Wildlife Protection",
+    "kind": "learn",
+    "chapter": "必修二 Unit 2",
+    "order": 8,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 2"
+  },
+  {
+    "id": "senior-l08",
+    "module": "senior",
+    "title": "Wildlife Protection · 听力",
+    "kind": "listening",
+    "chapter": "必修二 Unit 2",
+    "order": 8,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 2"
+  },
+  {
+    "id": "senior-09",
+    "module": "senior",
+    "title": "The Internet",
+    "kind": "learn",
+    "chapter": "必修二 Unit 3",
+    "order": 9,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 3"
+  },
+  {
+    "id": "senior-l09",
+    "module": "senior",
+    "title": "The Internet · 听力",
+    "kind": "listening",
+    "chapter": "必修二 Unit 3",
+    "order": 9,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 3"
+  },
+  {
+    "id": "senior-10",
+    "module": "senior",
+    "title": "History and Traditions",
+    "kind": "learn",
+    "chapter": "必修二 Unit 4",
+    "order": 10,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 4"
+  },
+  {
+    "id": "senior-l10",
+    "module": "senior",
+    "title": "History and Traditions · 听力",
+    "kind": "listening",
+    "chapter": "必修二 Unit 4",
+    "order": 10,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 4"
+  },
+  {
+    "id": "senior-11",
+    "module": "senior",
+    "title": "Festivals and Celebrations",
+    "kind": "learn",
+    "chapter": "必修三 Unit 1",
+    "order": 11,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 1"
+  },
+  {
+    "id": "senior-l11",
+    "module": "senior",
+    "title": "Festivals and Celebrations · 听力",
+    "kind": "listening",
+    "chapter": "必修三 Unit 1",
+    "order": 11,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 1"
+  },
+  {
+    "id": "senior-12",
+    "module": "senior",
+    "title": "Morals and Virtues",
+    "kind": "learn",
+    "chapter": "必修三 Unit 2",
+    "order": 12,
+    "sentenceCount": 2,
+    "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 2"
+  },
+  {
+    "id": "senior-l12",
+    "module": "senior",
+    "title": "Morals and Virtues · 听力",
+    "kind": "listening",
+    "chapter": "必修三 Unit 2",
+    "order": 12,
+    "itemCount": 6,
+    "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 2"
   }
 ]

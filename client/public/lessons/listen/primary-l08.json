@@ -1,0 +1,75 @@
+{
+  "id": "primary-l08",
+  "module": "primary",
+  "title": "My Family · 听力",
+  "chapter": "三下 Unit 2",
+  "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "This is my sister.",
+      "correct": "sister",
+      "choices": [
+        "sister",
+        "brother",
+        "mother",
+        "father"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "My grandfather is tall.",
+      "correct": "grandfather",
+      "choices": [
+        "grandfather",
+        "grandmother",
+        "grandson",
+        "grand"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "The baby is cute.",
+      "correct": "baby",
+      "choices": [
+        "baby",
+        "maybe",
+        "body",
+        "busy"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Is that your uncle?",
+      "correct": "uncle",
+      "choices": [
+        "uncle",
+        "aunt",
+        "ant",
+        "unit"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "My cousin is a boy.",
+      "correct": "cousin",
+      "choices": [
+        "cousin",
+        "cousins",
+        "cause",
+        "caution"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "We love our family.",
+      "correct": "family",
+      "choices": [
+        "family",
+        "famous",
+        "finally",
+        "friendly"
+      ]
+    }
+  ]
+}

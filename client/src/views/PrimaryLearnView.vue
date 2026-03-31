@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
-import { fetchLesson } from '../api/lessons'
+import { fetchLearnLesson } from '../api/lessons'
+import { getCurrentUsername } from '../composables/auth'
+import { recordLearnPhraseDone } from '../composables/progress'
 import type { Lesson, LessonPhrase } from '@shared/types/lesson'
 
 const props = defineProps<{ lessonId: string }>()
@@ -45,6 +47,13 @@ function normalizeWord(input: string) {
 
 const typingWords = computed(() => phraseWords.value.map((word) => normalizeWord(word)))
 const currentExpectedWord = computed(() => typingWords.value[wordIndex.value] ?? '')
+
+function countPhrases(les: Lesson) {
+  return les.sentences.reduce((sum, s) => sum + s.phrases.length, 0)
+}
+
+const totalPhrases = computed(() => (lesson.value ? countPhrases(lesson.value) : 0))
+const completedPhraseCount = ref(0)
 
 function sleep(ms: number) {
   return new Promise((resolve) => window.setTimeout(resolve, ms))
@@ -121,6 +130,12 @@ function finishPhrase() {
   celebrating.value = true
   resetWordBuffer()
   committedWords.value = []
+  completedPhraseCount.value += 1
+  const u = getCurrentUsername()
+  const L = lesson.value
+  if (u && L && totalPhrases.value > 0) {
+    recordLearnPhraseDone(u, L.id, completedPhraseCount.value, totalPhrases.value)
+  }
   window.setTimeout(() => {
     celebrating.value = false
     const s = lesson.value?.sentences[sentenceIndex.value]
@@ -213,7 +228,8 @@ watch(
 
 onMounted(async () => {
   try {
-    lesson.value = await fetchLesson(props.lessonId)
+    completedPhraseCount.value = 0
+    lesson.value = await fetchLearnLesson(props.lessonId)
     const t = currentPhrase.value?.text
     if (t) speakPhrase(t, SPEECH_REPEAT, speechGapMs.value)
   } catch (e) {
@@ -250,7 +266,10 @@ const progressLabel = computed(() => {
         <RouterLink to="/" class="nav-back">← 首页</RouterLink>
       </div>
       <div class="top-bar__center">
-        <span v-if="lesson" class="lesson-title">{{ lesson.title }}</span>
+        <template v-if="lesson">
+          <span v-if="lesson.chapter" class="lesson-chapter">{{ lesson.chapter }}</span>
+          <span class="lesson-title">{{ lesson.title }}</span>
+        </template>
       </div>
       <div v-if="lesson" class="top-bar__right" aria-label="读音设置">
         <label class="control-field">
@@ -278,6 +297,7 @@ const progressLabel = computed(() => {
 
     <template v-else-if="lesson">
       <p class="hint-mini">按顺序输入词组中每个单词；字母对错会标色。</p>
+      <p v-if="lesson.textbook" class="textbook-hint">{{ lesson.textbook }}</p>
       <p class="progress">{{ progressLabel }}</p>
 
       <section
@@ -381,6 +401,15 @@ const progressLabel = computed(() => {
   gap: 0.5rem 0.65rem;
 }
 
+.lesson-chapter {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #15803d;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+
 .lesson-title {
   font-size: clamp(1rem, 2.8vw, 1.2rem);
   font-weight: 600;
@@ -418,6 +447,17 @@ const progressLabel = computed(() => {
   color: var(--text);
   opacity: 0.55;
   text-align: center;
+}
+
+.textbook-hint {
+  margin: 0.25rem auto 0.5rem;
+  max-width: 52rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--text);
+  opacity: 0.5;
+  text-align: center;
+  font-style: italic;
 }
 
 .progress {

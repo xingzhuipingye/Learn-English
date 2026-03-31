@@ -1,0 +1,43 @@
+{
+  "id": "junior-11",
+  "module": "junior",
+  "title": "How Often Do You Exercise?",
+  "chapter": "八上 Unit 2",
+  "textbook": "风格参考：人教版《英语》八年级上册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "How often do you watch TV?",
+          "words": [
+            "How",
+            "often",
+            "do",
+            "you",
+            "watch",
+            "TV?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I exercise three times a week.",
+          "words": [
+            "I",
+            "exercise",
+            "three",
+            "times",
+            "a",
+            "week."
+          ]
+        }
+      ]
+    }
+  ]
+}

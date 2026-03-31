@@ -1,0 +1,75 @@
+{
+  "id": "senior-l10",
+  "module": "senior",
+  "title": "History and Traditions · 听力",
+  "chapter": "必修二 Unit 4",
+  "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 4",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Archaeologists found ancient pottery.",
+      "correct": "Archaeologists",
+      "choices": [
+        "Archaeologists",
+        "Apologists",
+        "Astrologists",
+        "Anthologists"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "The dynasty lasted over three centuries.",
+      "correct": "dynasty",
+      "choices": [
+        "dynasty",
+        "density",
+        "destiny",
+        "dignity"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Legends mix facts with imagination.",
+      "correct": "Legends",
+      "choices": [
+        "Legends",
+        "Lessons",
+        "Regions",
+        "Ledgers"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Oral traditions pass down songs.",
+      "correct": "Oral",
+      "choices": [
+        "Oral",
+        "Royal",
+        "Moral",
+        "Normal"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Museums preserve fragile documents.",
+      "correct": "fragile",
+      "choices": [
+        "fragile",
+        "agile",
+        "fertile",
+        "frequent"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Heritage tours attract global visitors.",
+      "correct": "Heritage",
+      "choices": [
+        "Heritage",
+        "Hermitage",
+        "Marriage",
+        "Percentage"
+      ]
+    }
+  ]
+}

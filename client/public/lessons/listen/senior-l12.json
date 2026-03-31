@@ -1,0 +1,75 @@
+{
+  "id": "senior-l12",
+  "module": "senior",
+  "title": "Morals and Virtues · 听力",
+  "chapter": "必修三 Unit 2",
+  "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Integrity matters more than shortcuts.",
+      "correct": "Integrity",
+      "choices": [
+        "Integrity",
+        "Intensity",
+        "Identity",
+        "Infinity"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "She returned the lost wallet immediately.",
+      "correct": "immediately",
+      "choices": [
+        "immediately",
+        "immensely",
+        "immigrant",
+        "incredibly"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Volunteers served meals at dawn.",
+      "correct": "Volunteers",
+      "choices": [
+        "Volunteers",
+        "Villagers",
+        "Visitors",
+        "Vehicles"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Forgiveness heals broken friendships.",
+      "correct": "Forgiveness",
+      "choices": [
+        "Forgiveness",
+        "Fitness",
+        "Firmness",
+        "Freshness"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Courage means doing the right thing.",
+      "correct": "Courage",
+      "choices": [
+        "Courage",
+        "Coverage",
+        "Carriage",
+        "Cottage"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Gratitude turns ordinary days brighter.",
+      "correct": "Gratitude",
+      "choices": [
+        "Gratitude",
+        "Latitude",
+        "Altitude",
+        "Attitude"
+      ]
+    }
+  ]
+}

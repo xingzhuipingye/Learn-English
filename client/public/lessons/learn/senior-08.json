@@ -1,0 +1,44 @@
+{
+  "id": "senior-08",
+  "module": "senior",
+  "title": "Wildlife Protection",
+  "chapter": "必修二 Unit 2",
+  "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Many species face habitat loss today.",
+          "words": [
+            "Many",
+            "species",
+            "face",
+            "habitat",
+            "loss",
+            "today."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "National parks protect animals from illegal hunting.",
+          "words": [
+            "National",
+            "parks",
+            "protect",
+            "animals",
+            "from",
+            "illegal",
+            "hunting."
+          ]
+        }
+      ]
+    }
+  ]
+}

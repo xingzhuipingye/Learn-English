@@ -1,0 +1,75 @@
+{
+  "id": "senior-l01",
+  "module": "senior",
+  "title": "First Week at Senior High · 听力",
+  "chapter": "必修一 Welcome Unit",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Welcome Unit",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The campus looks modern and bright.",
+      "correct": "campus",
+      "choices": [
+        "campus",
+        "company",
+        "compass",
+        "campaign"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "I feel a little nervous today.",
+      "correct": "nervous",
+      "choices": [
+        "nervous",
+        "numerous",
+        "natural",
+        "notice"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Our homeroom teacher is very kind.",
+      "correct": "homeroom",
+      "choices": [
+        "homeroom",
+        "homework",
+        "bedroom",
+        "bathroom"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "There is an orientation meeting tomorrow.",
+      "correct": "orientation",
+      "choices": [
+        "orientation",
+        "organization",
+        "original",
+        "ordinary"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "I will make new friends here.",
+      "correct": "friends",
+      "choices": [
+        "friends",
+        "finds",
+        "funds",
+        "fronts"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "The timetable is posted online.",
+      "correct": "timetable",
+      "choices": [
+        "timetable",
+        "table",
+        "tablet",
+        "timetables"
+      ]
+    }
+  ]
+}

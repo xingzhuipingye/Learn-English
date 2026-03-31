@@ -1,0 +1,75 @@
+{
+  "id": "primary-l09",
+  "module": "primary",
+  "title": "My Classroom · 听力",
+  "chapter": "四上 Unit 1",
+  "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "This is our classroom.",
+      "correct": "classroom",
+      "choices": [
+        "classroom",
+        "classmate",
+        "class",
+        "room"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Turn on the computer.",
+      "correct": "computer",
+      "choices": [
+        "computer",
+        "picture",
+        "paper",
+        "popular"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "The fan is on the wall.",
+      "correct": "fan",
+      "choices": [
+        "fan",
+        "fun",
+        "fine",
+        "fan"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Put the book in the desk.",
+      "correct": "desk",
+      "choices": [
+        "desk",
+        "disk",
+        "dust",
+        "ask"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Where is the light?",
+      "correct": "light",
+      "choices": [
+        "light",
+        "night",
+        "right",
+        "fight"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "The floor is clean.",
+      "correct": "floor",
+      "choices": [
+        "floor",
+        "flower",
+        "fly",
+        "flow"
+      ]
+    }
+  ]
+}

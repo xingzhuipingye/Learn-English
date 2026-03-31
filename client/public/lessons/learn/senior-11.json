@@ -1,0 +1,45 @@
+{
+  "id": "senior-11",
+  "module": "senior",
+  "title": "Festivals and Celebrations",
+  "chapter": "必修三 Unit 1",
+  "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "The Lantern Festival falls on the fifteenth day.",
+          "words": [
+            "The",
+            "Lantern",
+            "Festival",
+            "falls",
+            "on",
+            "the",
+            "fifteenth",
+            "day."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "Families gather to share traditional dishes.",
+          "words": [
+            "Families",
+            "gather",
+            "to",
+            "share",
+            "traditional",
+            "dishes."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "primary-l02",
+  "module": "primary",
+  "title": "Colours · 听力",
+  "chapter": "三上 Unit 2",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The sky is blue today.",
+      "correct": "blue",
+      "choices": [
+        "blue",
+        "black",
+        "brown",
+        "blame"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "I like green trees.",
+      "correct": "green",
+      "choices": [
+        "green",
+        "great",
+        "grape",
+        "grow"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "This is a yellow banana.",
+      "correct": "yellow",
+      "choices": [
+        "yellow",
+        "young",
+        "yell",
+        "year"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Colour it orange.",
+      "correct": "orange",
+      "choices": [
+        "orange",
+        "open",
+        "order",
+        "once"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Pink is my favourite colour.",
+      "correct": "Pink",
+      "choices": [
+        "Pink",
+        "Pick",
+        "Pack",
+        "Park"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Show me the black cat.",
+      "correct": "black",
+      "choices": [
+        "black",
+        "back",
+        "block",
+        "blank"
+      ]
+    }
+  ]
+}

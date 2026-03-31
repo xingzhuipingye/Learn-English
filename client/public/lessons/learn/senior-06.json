@@ -1,0 +1,44 @@
+{
+  "id": "senior-06",
+  "module": "senior",
+  "title": "Languages Around the World",
+  "chapter": "必修一 Unit 5",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 5",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Chinese characters carry rich cultural meaning.",
+          "words": [
+            "Chinese",
+            "characters",
+            "carry",
+            "rich",
+            "cultural",
+            "meaning."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "Learning a second language opens new doors.",
+          "words": [
+            "Learning",
+            "a",
+            "second",
+            "language",
+            "opens",
+            "new",
+            "doors."
+          ]
+        }
+      ]
+    }
+  ]
+}

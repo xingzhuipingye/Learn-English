@@ -1,0 +1,75 @@
+{
+  "id": "primary-l03",
+  "module": "primary",
+  "title": "Look at Me! · 听力",
+  "chapter": "三上 Unit 3",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 3",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Touch your nose.",
+      "correct": "nose",
+      "choices": [
+        "nose",
+        "rose",
+        "note",
+        "knows"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Open your mouth.",
+      "correct": "mouth",
+      "choices": [
+        "mouth",
+        "month",
+        "mouse",
+        "mount"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "This is my arm.",
+      "correct": "arm",
+      "choices": [
+        "arm",
+        "farm",
+        "art",
+        "aim"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Wave your hand.",
+      "correct": "hand",
+      "choices": [
+        "hand",
+        "head",
+        "hat",
+        "hang"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Stamp your foot.",
+      "correct": "foot",
+      "choices": [
+        "foot",
+        "food",
+        "four",
+        "full"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Clap your hands.",
+      "correct": "hands",
+      "choices": [
+        "hands",
+        "hand",
+        "lands",
+        "bands"
+      ]
+    }
+  ]
+}

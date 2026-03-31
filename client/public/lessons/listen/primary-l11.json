@@ -1,0 +1,75 @@
+{
+  "id": "primary-l11",
+  "module": "primary",
+  "title": "My Friends · 听力",
+  "chapter": "四上 Unit 3",
+  "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 3",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "My friend is quiet.",
+      "correct": "quiet",
+      "choices": [
+        "quiet",
+        "quite",
+        "quick",
+        "queen"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "He is very friendly.",
+      "correct": "friendly",
+      "choices": [
+        "friendly",
+        "family",
+        "finally",
+        "freely"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Her shoes are blue.",
+      "correct": "shoes",
+      "choices": [
+        "shoes",
+        "shows",
+        "choose",
+        "shoe"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "His glasses are black.",
+      "correct": "glasses",
+      "choices": [
+        "glasses",
+        "classes",
+        "grasses",
+        "grass"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "She is a cute girl.",
+      "correct": "girl",
+      "choices": [
+        "girl",
+        "gill",
+        "goal",
+        "give"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "We play together after school.",
+      "correct": "together",
+      "choices": [
+        "together",
+        "tomorrow",
+        "weather",
+        "gather"
+      ]
+    }
+  ]
+}

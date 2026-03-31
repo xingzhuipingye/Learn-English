@@ -1,0 +1,75 @@
+{
+  "id": "senior-l07",
+  "module": "senior",
+  "title": "Cultural Heritage · 听力",
+  "chapter": "必修二 Unit 1",
+  "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The temple was carefully restored.",
+      "correct": "restored",
+      "choices": [
+        "restored",
+        "recorded",
+        "rewarded",
+        "reported"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Traditional crafts need young learners.",
+      "correct": "crafts",
+      "choices": [
+        "crafts",
+        "drafts",
+        "grafts",
+        "crofts"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Museums use digital tours now.",
+      "correct": "digital",
+      "choices": [
+        "digital",
+        "distant",
+        "diligent",
+        "dignity"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Folk stories pass down values.",
+      "correct": "Folk",
+      "choices": [
+        "Folk",
+        "Fork",
+        "Fog",
+        "Fuel"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Protecting relics is our shared duty.",
+      "correct": "duty",
+      "choices": [
+        "duty",
+        "beauty",
+        "study",
+        "truly"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Cultural diversity makes cities lively.",
+      "correct": "diversity",
+      "choices": [
+        "diversity",
+        "divinity",
+        "device",
+        "divide"
+      ]
+    }
+  ]
+}

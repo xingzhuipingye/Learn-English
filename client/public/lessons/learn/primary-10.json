@@ -1,0 +1,42 @@
+{
+  "id": "primary-10",
+  "module": "primary",
+  "title": "My Schoolbag",
+  "chapter": "四上 Unit 2",
+  "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "What is in your schoolbag?",
+          "words": [
+            "What",
+            "is",
+            "in",
+            "your",
+            "schoolbag?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "An English book and a notebook.",
+          "words": [
+            "An",
+            "English",
+            "book",
+            "and",
+            "a",
+            "notebook."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "junior-02",
+  "module": "junior",
+  "title": "This Is My Sister",
+  "chapter": "七上 Unit 2",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "This is my sister Anna.",
+          "words": [
+            "This",
+            "is",
+            "my",
+            "sister",
+            "Anna."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "Those are my parents.",
+          "words": [
+            "Those",
+            "are",
+            "my",
+            "parents."
+          ]
+        }
+      ]
+    }
+  ]
+}

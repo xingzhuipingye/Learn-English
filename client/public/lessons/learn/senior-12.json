@@ -1,0 +1,45 @@
+{
+  "id": "senior-12",
+  "module": "senior",
+  "title": "Morals and Virtues",
+  "chapter": "必修三 Unit 2",
+  "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Honesty builds trust in every relationship.",
+          "words": [
+            "Honesty",
+            "builds",
+            "trust",
+            "in",
+            "every",
+            "relationship."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "Small acts of kindness can change a day.",
+          "words": [
+            "Small",
+            "acts",
+            "of",
+            "kindness",
+            "can",
+            "change",
+            "a",
+            "day."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "senior-07",
+  "module": "senior",
+  "title": "Cultural Heritage",
+  "chapter": "必修二 Unit 1",
+  "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Historic sites remind us where we come from.",
+          "words": [
+            "Historic",
+            "sites",
+            "remind",
+            "us",
+            "where",
+            "we",
+            "come",
+            "from."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "UNESCO lists many world heritage properties.",
+          "words": [
+            "UNESCO",
+            "lists",
+            "many",
+            "world",
+            "heritage",
+            "properties."
+          ]
+        }
+      ]
+    }
+  ]
+}

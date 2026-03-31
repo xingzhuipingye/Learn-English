@@ -1,0 +1,75 @@
+{
+  "id": "junior-l06",
+  "module": "junior",
+  "title": "Do You Like Bananas? · 听力",
+  "chapter": "七上 Unit 6",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 6",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "How about some bread?",
+      "correct": "bread",
+      "choices": [
+        "bread",
+        "break",
+        "bring",
+        "broad"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Ice-cream is not healthy.",
+      "correct": "healthy",
+      "choices": [
+        "healthy",
+        "health",
+        "heavy",
+        "heaven"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Chicken is my favourite.",
+      "correct": "Chicken",
+      "choices": [
+        "Chicken",
+        "Kitchen",
+        "Children",
+        "Chichen"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "We eat breakfast at seven.",
+      "correct": "breakfast",
+      "choices": [
+        "breakfast",
+        "break",
+        "breath",
+        "breast"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "The fruit is fresh.",
+      "correct": "fruit",
+      "choices": [
+        "fruit",
+        "foot",
+        "free",
+        "front"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "I really love vegetables.",
+      "correct": "vegetables",
+      "choices": [
+        "vegetables",
+        "tables",
+        "animals",
+        "examples"
+      ]
+    }
+  ]
+}

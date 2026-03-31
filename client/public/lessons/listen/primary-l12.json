@@ -1,0 +1,75 @@
+{
+  "id": "primary-l12",
+  "module": "primary",
+  "title": "What's He Like? · 听力",
+  "chapter": "五上 Unit 1",
+  "textbook": "风格参考：人教版（PEP）五年级上册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "He is a clever boy.",
+      "correct": "clever",
+      "choices": [
+        "clever",
+        "never",
+        "level",
+        "silver"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "She is very polite.",
+      "correct": "polite",
+      "choices": [
+        "polite",
+        "police",
+        "plate",
+        "planet"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "The head teacher is strict.",
+      "correct": "strict",
+      "choices": [
+        "strict",
+        "street",
+        "string",
+        "stick"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Is he helpful at home?",
+      "correct": "helpful",
+      "choices": [
+        "helpful",
+        "hopeful",
+        "useful",
+        "careful"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "My art teacher is funny.",
+      "correct": "funny",
+      "choices": [
+        "funny",
+        "sunny",
+        "money",
+        "honey"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "We will work hard this term.",
+      "correct": "hard",
+      "choices": [
+        "hard",
+        "hand",
+        "heart",
+        "heard"
+      ]
+    }
+  ]
+}

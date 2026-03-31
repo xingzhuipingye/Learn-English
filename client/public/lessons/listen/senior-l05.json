@@ -1,0 +1,75 @@
+{
+  "id": "senior-l05",
+  "module": "senior",
+  "title": "Natural Disasters · 听力",
+  "chapter": "必修一 Unit 4",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 4",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The tsunami warning came early.",
+      "correct": "tsunami",
+      "choices": [
+        "tsunami",
+        "salami",
+        "sunny",
+        "tunnel"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Relief teams arrived within hours.",
+      "correct": "Relief",
+      "choices": [
+        "Relief",
+        "Belief",
+        "Brief",
+        "Chief"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Shelters opened for affected families.",
+      "correct": "Shelters",
+      "choices": [
+        "Shelters",
+        "Shoulders",
+        "Shooters",
+        "Shutters"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "The flood ruined many crops.",
+      "correct": "flood",
+      "choices": [
+        "flood",
+        "blood",
+        "floor",
+        "food"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Stay calm during an evacuation drill.",
+      "correct": "evacuation",
+      "choices": [
+        "evacuation",
+        "evaluation",
+        "education",
+        "elevation"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Weather forecasts help us prepare.",
+      "correct": "forecasts",
+      "choices": [
+        "forecasts",
+        "forests",
+        "formats",
+        "forwards"
+      ]
+    }
+  ]
+}

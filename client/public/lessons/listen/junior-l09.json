@@ -1,0 +1,75 @@
+{
+  "id": "junior-l09",
+  "module": "junior",
+  "title": "Can You Play the Guitar? · 听力",
+  "chapter": "七下 Unit 1",
+  "textbook": "风格参考：人教版《英语》七年级下册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "She can swim very well.",
+      "correct": "swim",
+      "choices": [
+        "swim",
+        "swing",
+        "sweet",
+        "swift"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "He draws pictures every day.",
+      "correct": "draws",
+      "choices": [
+        "draws",
+        "dress",
+        "drops",
+        "drums"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Tell stories at the party.",
+      "correct": "stories",
+      "choices": [
+        "stories",
+        "stores",
+        "studies",
+        "scores"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "We need students for the show.",
+      "correct": "students",
+      "choices": [
+        "students",
+        "student",
+        "studies",
+        "studios"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Are you free on Sunday?",
+      "correct": "free",
+      "choices": [
+        "free",
+        "three",
+        "tree",
+        "fry"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Talk to Mr Miller after class.",
+      "correct": "Talk",
+      "choices": [
+        "Talk",
+        "Walk",
+        "Take",
+        "Task"
+      ]
+    }
+  ]
+}

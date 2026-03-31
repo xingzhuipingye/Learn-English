@@ -1,0 +1,41 @@
+{
+  "id": "junior-08",
+  "module": "junior",
+  "title": "When Is Your Birthday?",
+  "chapter": "七上 Unit 8",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 8",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "When is your birthday party?",
+          "words": [
+            "When",
+            "is",
+            "your",
+            "birthday",
+            "party?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "My birthday is in September.",
+          "words": [
+            "My",
+            "birthday",
+            "is",
+            "in",
+            "September."
+          ]
+        }
+      ]
+    }
+  ]
+}

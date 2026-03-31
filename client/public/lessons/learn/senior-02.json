@@ -1,0 +1,49 @@
+{
+  "id": "senior-02",
+  "module": "senior",
+  "title": "Teenage Life",
+  "chapter": "必修一 Unit 1",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Balancing study and hobbies can be challenging.",
+          "words": [
+            "Balancing",
+            "study",
+            "and",
+            "hobbies",
+            "can",
+            "be",
+            "challenging."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I try to make a weekly plan and stick to it.",
+          "words": [
+            "I",
+            "try",
+            "to",
+            "make",
+            "a",
+            "weekly",
+            "plan",
+            "and",
+            "stick",
+            "to",
+            "it."
+          ]
+        }
+      ]
+    }
+  ]
+}

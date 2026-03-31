@@ -1,0 +1,75 @@
+{
+  "id": "senior-l06",
+  "module": "senior",
+  "title": "Languages Around the World · 听力",
+  "chapter": "必修一 Unit 5",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 5",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Dialects vary from region to region.",
+      "correct": "Dialects",
+      "choices": [
+        "Dialects",
+        "Diets",
+        "Directs",
+        "Diamonds"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Latin influenced many European languages.",
+      "correct": "Latin",
+      "choices": [
+        "Latin",
+        "Latent",
+        "Latest",
+        "Latter"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Bilingual brains may stay flexible longer.",
+      "correct": "Bilingual",
+      "choices": [
+        "Bilingual",
+        "Bicycle",
+        "Biology",
+        "Building"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Pronunciation takes patient practice.",
+      "correct": "Pronunciation",
+      "choices": [
+        "Pronunciation",
+        "Production",
+        "Prediction",
+        "Protection"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Idioms are hard to translate literally.",
+      "correct": "literally",
+      "choices": [
+        "literally",
+        "literary",
+        "litter",
+        "little"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Sign language is also a language.",
+      "correct": "language",
+      "choices": [
+        "language",
+        "luggage",
+        "larger",
+        "laughter"
+      ]
+    }
+  ]
+}

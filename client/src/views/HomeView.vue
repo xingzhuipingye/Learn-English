@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { fetchLessonList } from '../api/lessons'
+import { useAuth } from '../composables/auth'
+import { getProgressPercent } from '../composables/progress'
 import type { LessonListItem } from '@shared/types/lesson'
 
 const lessons = ref<LessonListItem[]>([])
 const err = ref<string | null>(null)
 const selectedModule = ref<LessonListItem['module']>('primary')
 const selectedMode = ref<'learn' | 'listening'>('learn')
+
+const { session, logout } = useAuth()
 
 const moduleTabs: Array<{ key: LessonListItem['module']; label: string }> = [
   { key: 'primary', label: '小学' },
@@ -26,13 +30,30 @@ const currentModuleLabel = computed(
   () => moduleTabs.find((x) => x.key === selectedModule.value)?.label ?? '',
 )
 
-const filteredLessons = computed(() =>
-  lessons.value.filter((l) => l.module === selectedModule.value),
-)
+const filteredLessons = computed(() => {
+  const modeKind = selectedMode.value === 'learn' ? 'learn' : 'listening'
+  const list = lessons.value.filter(
+    (l) => l.module === selectedModule.value && l.kind === modeKind,
+  )
+  return [...list].sort((a, b) => {
+    const oa = a.order ?? 9999
+    const ob = b.order ?? 9999
+    if (oa !== ob) return oa - ob
+    return a.id.localeCompare(b.id)
+  })
+})
 
-const canEnterLesson = computed(
-  () => selectedModule.value === 'primary' && selectedMode.value === 'learn',
-)
+const canEnterLesson = computed(() => filteredLessons.value.length > 0)
+
+function lessonProgress(l: LessonListItem) {
+  return getProgressPercent(session.value?.username ?? null, l.id, l.kind)
+}
+
+function lessonMeta(l: LessonListItem) {
+  if (l.kind === 'learn' && l.sentenceCount != null) return `${l.sentenceCount} 句`
+  if (l.kind === 'listening' && l.itemCount != null) return `${l.itemCount} 题`
+  return ''
+}
 
 onMounted(async () => {
   try {
@@ -45,6 +66,14 @@ onMounted(async () => {
 
 <template>
   <div class="home">
+    <div class="user-bar">
+      <template v-if="session">
+        <span class="user-name">{{ session.username }}</span>
+        <button type="button" class="btn-logout" @click="logout">退出</button>
+      </template>
+      <RouterLink v-else to="/login" class="btn-login">登录 / 注册</RouterLink>
+    </div>
+
     <header class="hero">
       <p class="eyebrow">ENGLISH TRAINING</p>
       <h1>Learn English</h1>
@@ -88,18 +117,33 @@ onMounted(async () => {
       <ul v-if="canEnterLesson" class="list">
         <li v-for="l in filteredLessons" :key="l.id">
           <div class="item-main">
+            <p v-if="l.chapter" class="chapter">{{ l.chapter }}</p>
             <p class="title">{{ l.title }}</p>
-            <span class="meta">{{ l.sentenceCount }} 句</span>
+            <p v-if="l.textbook" class="textbook">{{ l.textbook }}</p>
+            <span class="meta">{{ lessonMeta(l) }}</span>
+            <div v-if="session && lessonProgress(l) != null" class="progress-wrap">
+              <div class="progress-bar">
+                <div class="progress-fill" :style="{ width: lessonProgress(l)! + '%' }" />
+              </div>
+              <span class="progress-pct">{{ lessonProgress(l) }}%</span>
+            </div>
           </div>
-          <RouterLink :to="{ name: 'primary-learn', params: { lessonId: l.id } }" class="enter">
+          <RouterLink
+            v-if="selectedMode === 'learn'"
+            :to="{ name: 'learn', params: { lessonId: l.id } }"
+            class="enter"
+          >
             开始学习
+          </RouterLink>
+          <RouterLink v-else :to="{ name: 'listen', params: { lessonId: l.id } }" class="enter">
+            开始听力
           </RouterLink>
         </li>
       </ul>
 
       <div v-else class="empty">
         <p class="empty-title">{{ currentModuleLabel }} {{ selectedMode === 'learn' ? '学习模式' : '听力模式' }}</p>
-        <p class="empty-sub">该模块正在制作中，先体验「小学 · 学习模式」吧。</p>
+        <p class="empty-sub">该学段暂无范文，可先切换学段或模式。</p>
       </div>
     </section>
   </div>
@@ -112,6 +156,42 @@ onMounted(async () => {
   margin: 0 auto;
   min-height: 100%;
   box-sizing: border-box;
+}
+
+.user-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-name {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #14532d;
+}
+
+.btn-logout {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid #bbf7d0;
+  background: #fff;
+  color: #334155;
+  cursor: pointer;
+}
+
+.btn-login {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.38rem 0.85rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.22);
 }
 
 .hero {
@@ -247,10 +327,56 @@ onMounted(async () => {
   min-width: 0;
 }
 
+.chapter {
+  margin: 0 0 0.15rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #15803d;
+  text-transform: none;
+}
+
 .title {
   margin: 0 0 0.2rem;
   color: #0f172a;
   font-weight: 600;
+}
+
+.textbook {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+.progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.45rem;
+  max-width: 14rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #22c55e, #10b981);
+  transition: width 0.25s ease;
+}
+
+.progress-pct {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #166534;
+  min-width: 2.25rem;
 }
 
 .enter {

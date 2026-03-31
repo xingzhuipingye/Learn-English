@@ -1,0 +1,49 @@
+{
+  "id": "senior-01",
+  "module": "senior",
+  "title": "First Week at Senior High",
+  "chapter": "必修一 Welcome Unit",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Welcome Unit",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Senior high school is a new start for everyone.",
+          "words": [
+            "Senior",
+            "high",
+            "school",
+            "is",
+            "a",
+            "new",
+            "start",
+            "for",
+            "everyone."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I plan to join the English club this term.",
+          "words": [
+            "I",
+            "plan",
+            "to",
+            "join",
+            "the",
+            "English",
+            "club",
+            "this",
+            "term."
+          ]
+        }
+      ]
+    }
+  ]
+}

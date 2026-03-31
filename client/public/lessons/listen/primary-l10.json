@@ -1,0 +1,75 @@
+{
+  "id": "primary-l10",
+  "module": "primary",
+  "title": "My Schoolbag · 听力",
+  "chapter": "四上 Unit 2",
+  "textbook": "风格参考：人教版（PEP）四年级上册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "I lost my maths book.",
+      "correct": "maths",
+      "choices": [
+        "maths",
+        "maps",
+        "match",
+        "mass"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "This is a Chinese book.",
+      "correct": "Chinese",
+      "choices": [
+        "Chinese",
+        "English",
+        "Japan",
+        "science"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Put the key in the bag.",
+      "correct": "key",
+      "choices": [
+        "key",
+        "kid",
+        "keep",
+        "kind"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "I have a candy in the box.",
+      "correct": "candy",
+      "choices": [
+        "candy",
+        "candy",
+        "candle",
+        "Sunday"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "The storybook is fun.",
+      "correct": "storybook",
+      "choices": [
+        "storybook",
+        "notebook",
+        "textbook",
+        "workbook"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "The toy is in the box.",
+      "correct": "toy",
+      "choices": [
+        "toy",
+        "boy",
+        "try",
+        "day"
+      ]
+    }
+  ]
+}

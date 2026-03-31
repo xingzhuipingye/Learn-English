@@ -1,0 +1,42 @@
+{
+  "id": "junior-07",
+  "module": "junior",
+  "title": "How Much Are These Socks?",
+  "chapter": "七上 Unit 7",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 7",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "How much is this T-shirt?",
+          "words": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "T-shirt?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I will take the blue sweater.",
+          "words": [
+            "I",
+            "will",
+            "take",
+            "the",
+            "blue",
+            "sweater."
+          ]
+        }
+      ]
+    }
+  ]
+}

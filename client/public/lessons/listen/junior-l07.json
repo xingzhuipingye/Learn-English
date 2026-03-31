@@ -1,0 +1,75 @@
+{
+  "id": "junior-l07",
+  "module": "junior",
+  "title": "How Much Are These Socks? · 听力",
+  "chapter": "七上 Unit 7",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 7",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The socks are only two dollars.",
+      "correct": "dollars",
+      "choices": [
+        "dollars",
+        "dollar",
+        "doors",
+        "dolls"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "We sell trousers in many colours.",
+      "correct": "trousers",
+      "choices": [
+        "trousers",
+        "trouser",
+        "traces",
+        "towers"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "The skirt looks nice.",
+      "correct": "skirt",
+      "choices": [
+        "skirt",
+        "shirt",
+        "short",
+        "start"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Can I help you today?",
+      "correct": "help",
+      "choices": [
+        "help",
+        "held",
+        "hop",
+        "hope"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Here is a big sale.",
+      "correct": "sale",
+      "choices": [
+        "sale",
+        "sail",
+        "safe",
+        "same"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "I need a pair of shoes.",
+      "correct": "pair",
+      "choices": [
+        "pair",
+        "pear",
+        "poor",
+        "pure"
+      ]
+    }
+  ]
+}

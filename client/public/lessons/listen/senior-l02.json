@@ -1,0 +1,75 @@
+{
+  "id": "senior-l02",
+  "module": "senior",
+  "title": "Teenage Life · 听力",
+  "chapter": "必修一 Unit 1",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Volunteer work builds confidence.",
+      "correct": "Volunteer",
+      "choices": [
+        "Volunteer",
+        "Various",
+        "Victory",
+        "Volume"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Peer pressure is common among teenagers.",
+      "correct": "pressure",
+      "choices": [
+        "pressure",
+        "pleasure",
+        "precious",
+        "presence"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "She prefers offline reading at night.",
+      "correct": "prefers",
+      "choices": [
+        "prefers",
+        "prepares",
+        "pretends",
+        "prevents"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "We should manage screen time wisely.",
+      "correct": "wisely",
+      "choices": [
+        "wisely",
+        "widely",
+        "wildly",
+        "weekly"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Joining a club enriches school life.",
+      "correct": "enriches",
+      "choices": [
+        "enriches",
+        "enemies",
+        "enters",
+        "enjoys"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Good habits lead to better grades.",
+      "correct": "habits",
+      "choices": [
+        "habits",
+        "halves",
+        "habitat",
+        "happens"
+      ]
+    }
+  ]
+}

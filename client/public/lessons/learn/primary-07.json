@@ -1,0 +1,41 @@
+{
+  "id": "primary-07",
+  "module": "primary",
+  "title": "Welcome Back to School",
+  "chapter": "三下 Unit 1",
+  "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Nice to see you again.",
+          "words": [
+            "Nice",
+            "to",
+            "see",
+            "you",
+            "again."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "We are back at school.",
+          "words": [
+            "We",
+            "are",
+            "back",
+            "at",
+            "school."
+          ]
+        }
+      ]
+    }
+  ]
+}

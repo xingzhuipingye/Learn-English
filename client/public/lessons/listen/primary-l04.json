@@ -1,0 +1,75 @@
+{
+  "id": "primary-l04",
+  "module": "primary",
+  "title": "We Love Animals · 听力",
+  "chapter": "三上 Unit 4",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 4",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "This is a funny bird.",
+      "correct": "bird",
+      "choices": [
+        "bird",
+        "bear",
+        "boat",
+        "book"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "The pig is fat.",
+      "correct": "pig",
+      "choices": [
+        "pig",
+        "big",
+        "dig",
+        "pin"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "I have a pet dog.",
+      "correct": "dog",
+      "choices": [
+        "dog",
+        "duck",
+        "door",
+        "desk"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "The elephant is big.",
+      "correct": "elephant",
+      "choices": [
+        "elephant",
+        "animal",
+        "element",
+        "elegant"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Look at the monkey.",
+      "correct": "monkey",
+      "choices": [
+        "monkey",
+        "money",
+        "monthly",
+        "many"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "A tiger runs fast.",
+      "correct": "tiger",
+      "choices": [
+        "tiger",
+        "timer",
+        "lion",
+        "bear"
+      ]
+    }
+  ]
+}

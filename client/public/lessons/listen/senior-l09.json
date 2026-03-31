@@ -1,0 +1,75 @@
+{
+  "id": "senior-l09",
+  "module": "senior",
+  "title": "The Internet · 听力",
+  "chapter": "必修二 Unit 3",
+  "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 3",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Phishing scams look like real emails.",
+      "correct": "Phishing",
+      "choices": [
+        "Phishing",
+        "Fishing",
+        "Pushing",
+        "Wishing"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Strong passwords reduce online risk.",
+      "correct": "passwords",
+      "choices": [
+        "passwords",
+        "pastors",
+        "pastures",
+        "pasters"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Cloud storage keeps backups safe.",
+      "correct": "storage",
+      "choices": [
+        "storage",
+        "story",
+        "strange",
+        "stroke"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Algorithms shape what we see.",
+      "correct": "Algorithms",
+      "choices": [
+        "Algorithms",
+        "Allergies",
+        "Algebras",
+        "Alternatives"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Digital footprints last a long time.",
+      "correct": "footprints",
+      "choices": [
+        "footprints",
+        "football",
+        "footnote",
+        "footstep"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Privacy settings deserve regular updates.",
+      "correct": "Privacy",
+      "choices": [
+        "Privacy",
+        "Policy",
+        "Poverty",
+        "Primary"
+      ]
+    }
+  ]
+}

@@ -1,62 +1,43 @@
 # Learn English
 
-一个面向英语学习的 Web 项目，当前已完成「小学 · 学习模式」的首版功能，并支持本地运行与 GitHub Pages 部署。
+面向英语学习的 Web 项目，支持本地运行与 GitHub Pages 部署。
 
 在线体验：<https://xingzhuipingye.github.io/Learn-English/>
 
 ## 功能概览
 
-- 学段菜单：小学、初中、高中、大学、托福、雅思（当前小学可用）
-- 模式菜单：学习模式、听力模式（当前学习模式可用）
-- 学习模式核心流程：
-  - 短文按 `句子 -> 词组 -> 单词` 组织
-  - 用户按键逐字输入当前单词
-  - 输入实时判定：正确绿色、错误红色
-  - 当前词组完成后触发庆祝特效（Congratulations）
-  - 支持英文语音朗读（TTS）
+- 学段：小学、初中、高中；每学段按**人教版常见分册与单元**编排**12 章**（学习 + 听力各 12 课，共 72 条目录；范文为原创示例，非教材原文）
+- **学习模式**：短文按「句子 → 词组 → 单词」组织，逐字输入、实时判定、庆祝与 TTS
+- **听力模式**：句子朗读、挖空、四选一，逐题推进
+- **用户登录**：演示用本地账号（`localStorage`，密码经 SHA-256 哈希；非生产级安全）
+- **学习进度**：与当前登录用户绑定，学习模式按已完成词组数、听力模式按已完成题数；首页显示进度条
 
-## 输入与判定规则
+## 读音设置（学习页）
 
-- 忽略大小写：`A` 与 `a` 视为一致
-- 忽略标点：如课文中的 `today.`，输入 `today` 也判定正确
-- 展示保留用户真实按键大小写（不强制转大写/小写）
-
-## 读音设置
-
-学习页右上角支持：
-
-- 间隔（0.8s / 1.0s / 1.2s / 1.5s / 2.0s）
-- 读速（慢 / 中 / 快）
-
-说明：
-
-- 朗读次数当前固定为 3 次
-- 点击「再听一遍」按当前间隔和读速生效
+右上角可设间隔与读速；朗读次数当前固定为 3 次；「再听一遍」按当前设置生效。
 
 ## 技术栈
 
 - 前端：Vue 3 + TypeScript + Vite + Vue Router
-- 数据：静态 JSON（`client/public/lessons`）
+- 数据：静态 JSON（`client/public/lessons/`）
 - 部署：GitHub Actions + GitHub Pages
 
-## 项目结构
+## 项目结构（课文与代码）
 
 ```text
 learn-english/
-├─ client/                      # 前端应用
-│  ├─ public/
-│  │  ├─ lessons/
-│  │  │  ├─ index.json          # 课文目录
-│  │  │  └─ primary-01.json     # 示例课文
+├─ client/
+│  ├─ public/lessons/
+│  │  ├─ index.json              # 课文目录（含 kind: learn | listening）
+│  │  ├─ learn/                  # 学习模式课文，如 primary-01.json
+│  │  └─ listen/                 # 听力模式课文，如 primary-l01.json
 │  └─ src/
-│     ├─ views/
-│     │  ├─ HomeView.vue
-│     │  └─ PrimaryLearnView.vue
+│     ├─ views/ HomeView, PrimaryLearnView, ListeningView, LoginView
+│     ├─ composables/ auth.ts, progress.ts
 │     ├─ api/lessons.ts
 │     └─ router/index.ts
-├─ shared/types/lesson.ts       # 共用类型定义
-└─ .github/workflows/
-   └─ deploy-pages.yml          # 自动部署工作流
+├─ shared/types/lesson.ts
+└─ .github/workflows/deploy-pages.yml
 ```
 
 ## 本地运行
@@ -67,55 +48,17 @@ npm install
 npm run dev
 ```
 
-默认地址：<http://localhost:5173>
+默认地址：<http://localhost:5173>。进入学习与听力页面前需先登录（可注册新账号）。
 
-## 课文数据格式
+## 课文与目录
 
-`client/public/lessons/primary-01.json` 示例：
-
-```json
-{
-  "id": "primary-01",
-  "module": "primary",
-  "title": "A Sunny Day",
-  "sentences": [
-    {
-      "id": "s1",
-      "phrases": [
-        {
-          "id": "s1-p1",
-          "text": "The sun is bright today.",
-          "words": ["The", "sun", "is", "bright", "today."]
-        }
-      ]
-    }
-  ]
-}
-```
-
-新增课文时：
-
-1. 在 `client/public/lessons/` 新增 `xxx.json`
-2. 在 `client/public/lessons/index.json` 中追加目录项
+1. 学习课文放在 `client/public/lessons/learn/<id>.json`，听力放在 `client/public/lessons/listen/<id>.json`。
+2. `index.json` 中每条含 `chapter`（如「三上 Unit 1」）、`order`（章节顺序）、`kind`、`module`、`title` 等；听力需 `items` 与四选一结构，详见 `shared/types/lesson.ts`。
+3. 课文可含 `textbook`、`chapter` 字段；首页与学习/听力页会展示章节与说明。
+4. **批量生成**：在仓库根目录执行 `npm run generate-lessons`（或 `node scripts/generate-textbook-lessons.mjs`），会根据 `scripts/curriculum/*.mjs` 中的章节数据重写 `client/public/lessons/` 下全部课文与 `index.json`。修改范文时请改课程数据后重新运行该命令。
 
 ## GitHub Pages 部署
 
-本项目已配置自动部署：
-
 - 工作流：`.github/workflows/deploy-pages.yml`
-- 触发条件：push 到 `main`
-- 部署目标：GitHub Pages（Source: GitHub Actions）
-
-## 当前进度与后续规划
-
-已完成：
-
-- 小学首页入口
-- 小学学习模式（词组输入、判定、庆祝、TTS）
-- 响应式布局（桌面/移动端）
-
-规划中：
-
-- 听力模式
-- 初中/高中/大学/托福/雅思内容
-- 更多课文与训练关卡
+- 触发：`push` 到 `main`
+- 部署源：GitHub Actions

@@ -1,0 +1,38 @@
+{
+  "id": "junior-01",
+  "module": "junior",
+  "title": "Good Morning!",
+  "chapter": "七上 Unit 1",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Good morning, Alice.",
+          "words": [
+            "Good",
+            "morning,",
+            "Alice."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "How are you today?",
+          "words": [
+            "How",
+            "are",
+            "you",
+            "today?"
+          ]
+        }
+      ]
+    }
+  ]
+}

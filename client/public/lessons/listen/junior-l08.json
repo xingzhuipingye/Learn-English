@@ -1,0 +1,75 @@
+{
+  "id": "junior-l08",
+  "module": "junior",
+  "title": "When Is Your Birthday? · 听力",
+  "chapter": "七上 Unit 8",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 8",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The school trip is in October.",
+      "correct": "October",
+      "choices": [
+        "October",
+        "November",
+        "December",
+        "August"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "We have an art festival.",
+      "correct": "festival",
+      "choices": [
+        "festival",
+        "festive",
+        "fatal",
+        "fossil"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Happy birthday to you.",
+      "correct": "birthday",
+      "choices": [
+        "birthday",
+        "Thursday",
+        "holiday",
+        "birth"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "This term is busy.",
+      "correct": "term",
+      "choices": [
+        "term",
+        "team",
+        "time",
+        "turn"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "The English test is next week.",
+      "correct": "test",
+      "choices": [
+        "test",
+        "text",
+        "taste",
+        "toast"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "See you at the party.",
+      "correct": "party",
+      "choices": [
+        "party",
+        "park",
+        "part",
+        "pass"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "senior-09",
+  "module": "senior",
+  "title": "The Internet",
+  "chapter": "必修二 Unit 3",
+  "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 3",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "The Internet connects people across continents.",
+          "words": [
+            "The",
+            "Internet",
+            "connects",
+            "people",
+            "across",
+            "continents."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "We should check sources before sharing news.",
+          "words": [
+            "We",
+            "should",
+            "check",
+            "sources",
+            "before",
+            "sharing",
+            "news."
+          ]
+        }
+      ]
+    }
+  ]
+}

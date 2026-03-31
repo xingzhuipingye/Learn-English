@@ -1,0 +1,75 @@
+{
+  "id": "primary-l07",
+  "module": "primary",
+  "title": "Welcome Back to School · 听力",
+  "chapter": "三下 Unit 1",
+  "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "This is the UK flag.",
+      "correct": "flag",
+      "choices": [
+        "flag",
+        "flat",
+        "flow",
+        "fly"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "She is from Canada.",
+      "correct": "Canada",
+      "choices": [
+        "Canada",
+        "China",
+        "America",
+        "Africa"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "He is a new student.",
+      "correct": "student",
+      "choices": [
+        "student",
+        "teacher",
+        "children",
+        "parent"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Where are you from?",
+      "correct": "from",
+      "choices": [
+        "from",
+        "form",
+        "farm",
+        "front"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Welcome to our class.",
+      "correct": "Welcome",
+      "choices": [
+        "Welcome",
+        "Well",
+        "Will",
+        "While"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Good to see you again.",
+      "correct": "again",
+      "choices": [
+        "again",
+        "against",
+        "garden",
+        "gain"
+      ]
+    }
+  ]
+}

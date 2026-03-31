@@ -1,0 +1,44 @@
+{
+  "id": "senior-03",
+  "module": "senior",
+  "title": "Travelling Around",
+  "chapter": "必修一 Unit 2",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Travelling abroad broadens our horizons.",
+          "words": [
+            "Travelling",
+            "abroad",
+            "broadens",
+            "our",
+            "horizons."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "We booked a hotel near the ancient town.",
+          "words": [
+            "We",
+            "booked",
+            "a",
+            "hotel",
+            "near",
+            "the",
+            "ancient",
+            "town."
+          ]
+        }
+      ]
+    }
+  ]
+}

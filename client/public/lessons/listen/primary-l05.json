@@ -1,0 +1,75 @@
+{
+  "id": "primary-l05",
+  "module": "primary",
+  "title": "Let's Eat! · 听力",
+  "chapter": "三上 Unit 5",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 5",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "I would like some juice.",
+      "correct": "juice",
+      "choices": [
+        "juice",
+        "rice",
+        "ice",
+        "nice"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Pass me the egg.",
+      "correct": "egg",
+      "choices": [
+        "egg",
+        "leg",
+        "bag",
+        "big"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "The fish is fresh.",
+      "correct": "fish",
+      "choices": [
+        "fish",
+        "dish",
+        "wish",
+        "finish"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Cut the cake with care.",
+      "correct": "cake",
+      "choices": [
+        "cake",
+        "take",
+        "make",
+        "lake"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "I have a hot dog.",
+      "correct": "hot",
+      "choices": [
+        "hot",
+        "hat",
+        "hit",
+        "lot"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Vegetables are good for you.",
+      "correct": "Vegetables",
+      "choices": [
+        "Vegetables",
+        "Animals",
+        "Tables",
+        "Examples"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "primary-08",
+  "module": "primary",
+  "title": "My Family",
+  "chapter": "三下 Unit 2",
+  "textbook": "风格参考：人教版（PEP）三年级下册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "This is my father.",
+          "words": [
+            "This",
+            "is",
+            "my",
+            "father."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "She is my mother.",
+          "words": [
+            "She",
+            "is",
+            "my",
+            "mother."
+          ]
+        }
+      ]
+    }
+  ]
+}

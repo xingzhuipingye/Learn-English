@@ -1,0 +1,75 @@
+{
+  "id": "junior-l12",
+  "module": "junior",
+  "title": "Could You Please Clean Your Room? · 听力",
+  "chapter": "八年级 Unit 3",
+  "textbook": "风格参考：人教版《英语》八年级下册 · Unit 3",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Could you sweep the floor?",
+      "correct": "sweep",
+      "choices": [
+        "sweep",
+        "sweet",
+        "sleep",
+        "swipe"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Please fold your shirt.",
+      "correct": "fold",
+      "choices": [
+        "fold",
+        "folk",
+        "food",
+        "fond"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Pass me the rubbish bag.",
+      "correct": "rubbish",
+      "choices": [
+        "rubbish",
+        "rabbit",
+        "ribbon",
+        "rubber"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "I need to do chores.",
+      "correct": "chores",
+      "choices": [
+        "chores",
+        "choirs",
+        "chairs",
+        "cheers"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Could I stay out late?",
+      "correct": "stay",
+      "choices": [
+        "stay",
+        "say",
+        "stays",
+        "steak"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Thanks for taking care of the dog.",
+      "correct": "care",
+      "choices": [
+        "care",
+        "car",
+        "core",
+        "card"
+      ]
+    }
+  ]
+}

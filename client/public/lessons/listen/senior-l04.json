@@ -1,0 +1,75 @@
+{
+  "id": "senior-l04",
+  "module": "senior",
+  "title": "Sports and Fitness · 听力",
+  "chapter": "必修一 Unit 3",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 3",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Marathon training requires patience.",
+      "correct": "Marathon",
+      "choices": [
+        "Marathon",
+        "Machine",
+        "Magazine",
+        "Material"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Stretching prevents muscle injury.",
+      "correct": "Stretching",
+      "choices": [
+        "Stretching",
+        "Strengthening",
+        "Streaming",
+        "Straining"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Hydration matters during summer runs.",
+      "correct": "Hydration",
+      "choices": [
+        "Hydration",
+        "Vacation",
+        "Variation",
+        "Vibration"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Team spirit matters more than medals.",
+      "correct": "spirit",
+      "choices": [
+        "spirit",
+        "sport",
+        "spring",
+        "speak"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "The stadium will host the finals.",
+      "correct": "stadium",
+      "choices": [
+        "stadium",
+        "station",
+        "standard",
+        "status"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "A balanced diet supports performance.",
+      "correct": "balanced",
+      "choices": [
+        "balanced",
+        "balance",
+        "balloon",
+        "ballet"
+      ]
+    }
+  ]
+}

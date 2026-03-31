@@ -1,0 +1,75 @@
+{
+  "id": "junior-l10",
+  "module": "junior",
+  "title": "Where Did You Go on Vacation? · 听力",
+  "chapter": "八上 Unit 1",
+  "textbook": "风格参考：人教版《英语》八年级上册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "We visited the science museum.",
+      "correct": "museum",
+      "choices": [
+        "museum",
+        "music",
+        "medium",
+        "moment"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "The food tasted really good.",
+      "correct": "tasted",
+      "choices": [
+        "tasted",
+        "tested",
+        "tasked",
+        "toasted"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "I felt tired but happy.",
+      "correct": "tired",
+      "choices": [
+        "tired",
+        "tried",
+        "tiled",
+        "tiered"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Did you go with anyone?",
+      "correct": "anyone",
+      "choices": [
+        "anyone",
+        "anyway",
+        "anything",
+        "anywhere"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Nothing felt boring there.",
+      "correct": "boring",
+      "choices": [
+        "boring",
+        "bring",
+        "boiling",
+        "boarding"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "I bought something for you.",
+      "correct": "bought",
+      "choices": [
+        "bought",
+        "brought",
+        "bright",
+        "board"
+      ]
+    }
+  ]
+}

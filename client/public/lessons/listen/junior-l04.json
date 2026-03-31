@@ -1,0 +1,75 @@
+{
+  "id": "junior-l04",
+  "module": "junior",
+  "title": "Where's My Schoolbag? · 听力",
+  "chapter": "七上 Unit 4",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 4",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The keys are on the sofa.",
+      "correct": "sofa",
+      "choices": [
+        "sofa",
+        "soft",
+        "safe",
+        "soap"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Your books are in the bookcase.",
+      "correct": "bookcase",
+      "choices": [
+        "bookcase",
+        "bookshop",
+        "backpack",
+        "notebook"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "The model plane is tidy.",
+      "correct": "model",
+      "choices": [
+        "model",
+        "middle",
+        "modal",
+        "moral"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Come on, we are late.",
+      "correct": "late",
+      "choices": [
+        "late",
+        "let",
+        "lake",
+        "last"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "I need my English book.",
+      "correct": "need",
+      "choices": [
+        "need",
+        "read",
+        "lead",
+        "feed"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Everything is in the room.",
+      "correct": "Everything",
+      "choices": [
+        "Everything",
+        "Everyone",
+        "Everyday",
+        "Every"
+      ]
+    }
+  ]
+}

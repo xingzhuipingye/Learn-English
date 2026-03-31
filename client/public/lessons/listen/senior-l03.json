@@ -1,0 +1,75 @@
+{
+  "id": "senior-l03",
+  "module": "senior",
+  "title": "Travelling Around · 听力",
+  "chapter": "必修一 Unit 2",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "The itinerary includes two museums.",
+      "correct": "itinerary",
+      "choices": [
+        "itinerary",
+        "identity",
+        "imaginary",
+        "inventory"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Local customs deserve our respect.",
+      "correct": "customs",
+      "choices": [
+        "customs",
+        "customers",
+        "costumes",
+        "courses"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "We applied for a travel visa online.",
+      "correct": "visa",
+      "choices": [
+        "visa",
+        "vision",
+        "voice",
+        "virus"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "The scenery along the coast was stunning.",
+      "correct": "scenery",
+      "choices": [
+        "scenery",
+        "schedule",
+        "science",
+        "secretary"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Pack light if you hike often.",
+      "correct": "Pack",
+      "choices": [
+        "Pack",
+        "Pick",
+        "Park",
+        "Peak"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Public transport saves money.",
+      "correct": "transport",
+      "choices": [
+        "transport",
+        "translate",
+        "transparent",
+        "trap"
+      ]
+    }
+  ]
+}

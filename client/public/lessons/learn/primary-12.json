@@ -1,0 +1,43 @@
+{
+  "id": "primary-12",
+  "module": "primary",
+  "title": "What's He Like?",
+  "chapter": "五上 Unit 1",
+  "textbook": "风格参考：人教版（PEP）五年级上册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Mr Young is our music teacher.",
+          "words": [
+            "Mr",
+            "Young",
+            "is",
+            "our",
+            "music",
+            "teacher."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "She is kind but sometimes strict.",
+          "words": [
+            "She",
+            "is",
+            "kind",
+            "but",
+            "sometimes",
+            "strict."
+          ]
+        }
+      ]
+    }
+  ]
+}

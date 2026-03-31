@@ -1,0 +1,75 @@
+{
+  "id": "primary-l06",
+  "module": "primary",
+  "title": "Happy Birthday! · 听力",
+  "chapter": "三上 Unit 6",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 6",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Happy birthday to you.",
+      "correct": "birthday",
+      "choices": [
+        "birthday",
+        "Thursday",
+        "holiday",
+        "day"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "I am seven years old.",
+      "correct": "seven",
+      "choices": [
+        "seven",
+        "eleven",
+        "even",
+        "oven"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "This is my gift.",
+      "correct": "gift",
+      "choices": [
+        "gift",
+        "lift",
+        "give",
+        "left"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Make a wish.",
+      "correct": "wish",
+      "choices": [
+        "wish",
+        "fish",
+        "wash",
+        "which"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "The candle is on the cake.",
+      "correct": "candle",
+      "choices": [
+        "candle",
+        "handle",
+        "kindle",
+        "saddle"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Thank you for the party.",
+      "correct": "party",
+      "choices": [
+        "party",
+        "pretty",
+        "park",
+        "paper"
+      ]
+    }
+  ]
+}

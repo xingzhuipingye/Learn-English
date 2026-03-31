@@ -1,0 +1,75 @@
+{
+  "id": "primary-l01",
+  "module": "primary",
+  "title": "Hello! · 听力",
+  "chapter": "三上 Unit 1",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "This is my new friend.",
+      "correct": "friend",
+      "choices": [
+        "friend",
+        "teacher",
+        "sister",
+        "brother"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Good morning, Miss White.",
+      "correct": "morning",
+      "choices": [
+        "morning",
+        "evening",
+        "afternoon",
+        "night"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "I have a pencil box.",
+      "correct": "pencil",
+      "choices": [
+        "pencil",
+        "crayon",
+        "crayons",
+        "paper"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Goodbye, see you later.",
+      "correct": "later",
+      "choices": [
+        "later",
+        "letter",
+        "listen",
+        "little"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "What is your name?",
+      "correct": "name",
+      "choices": [
+        "name",
+        "game",
+        "same",
+        "face"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Let us go to school.",
+      "correct": "school",
+      "choices": [
+        "school",
+        "home",
+        "room",
+        "house"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "primary-02",
+  "module": "primary",
+  "title": "Colours",
+  "chapter": "三上 Unit 2",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 2",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "I see red and blue.",
+          "words": [
+            "I",
+            "see",
+            "red",
+            "and",
+            "blue."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "What colour is the apple?",
+          "words": [
+            "What",
+            "colour",
+            "is",
+            "the",
+            "apple?"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "senior-05",
+  "module": "senior",
+  "title": "Natural Disasters",
+  "chapter": "必修一 Unit 4",
+  "textbook": "风格参考：人教版高中《英语》必修第一册 · Unit 4",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Earthquakes may strike without much warning.",
+          "words": [
+            "Earthquakes",
+            "may",
+            "strike",
+            "without",
+            "much",
+            "warning."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "Emergency kits should include water and flashlights.",
+          "words": [
+            "Emergency",
+            "kits",
+            "should",
+            "include",
+            "water",
+            "and",
+            "flashlights."
+          ]
+        }
+      ]
+    }
+  ]
+}

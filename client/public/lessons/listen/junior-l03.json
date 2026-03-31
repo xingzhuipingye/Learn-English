@@ -1,0 +1,75 @@
+{
+  "id": "junior-l03",
+  "module": "junior",
+  "title": "Is This Your Pencil? · 听力",
+  "chapter": "七上 Unit 3",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 3",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "This is my schoolbag.",
+      "correct": "schoolbag",
+      "choices": [
+        "schoolbag",
+        "notebook",
+        "backpack",
+        "handbag"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "The dictionary is mine.",
+      "correct": "dictionary",
+      "choices": [
+        "dictionary",
+        "direction",
+        "station",
+        "fiction"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "I lost my eraser.",
+      "correct": "eraser",
+      "choices": [
+        "eraser",
+        "reader",
+        "ruler",
+        "razor"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Please call me at five.",
+      "correct": "call",
+      "choices": [
+        "call",
+        "cold",
+        "cool",
+        "cell"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "The ring is not for sale.",
+      "correct": "ring",
+      "choices": [
+        "ring",
+        "bring",
+        "sing",
+        "wing"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Thank you for your help.",
+      "correct": "help",
+      "choices": [
+        "help",
+        "held",
+        "hell",
+        "heap"
+      ]
+    }
+  ]
+}

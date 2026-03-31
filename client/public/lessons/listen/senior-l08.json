@@ -1,0 +1,75 @@
+{
+  "id": "senior-l08",
+  "module": "senior",
+  "title": "Wildlife Protection · 听力",
+  "chapter": "必修二 Unit 2",
+  "textbook": "风格参考：人教版高中《英语》必修第二册 · Unit 2",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Poaching threatens endangered animals.",
+      "correct": "Poaching",
+      "choices": [
+        "Poaching",
+        "Coaching",
+        "Porch",
+        "Posting"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "The reserve covers a huge wetland.",
+      "correct": "wetland",
+      "choices": [
+        "wetland",
+        "westland",
+        "wheat",
+        "weapon"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "Biologists track migration routes.",
+      "correct": "migration",
+      "choices": [
+        "migration",
+        "military",
+        "million",
+        "mineral"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "Climate change alters food chains.",
+      "correct": "Climate",
+      "choices": [
+        "Climate",
+        "Clinic",
+        "Climax",
+        "Climber"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "We banned single-use plastic bags.",
+      "correct": "banned",
+      "choices": [
+        "banned",
+        "band",
+        "bank",
+        "banner"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Ecotourism funds local guards.",
+      "correct": "Ecotourism",
+      "choices": [
+        "Ecotourism",
+        "Economics",
+        "Ecology",
+        "Education"
+      ]
+    }
+  ]
+}

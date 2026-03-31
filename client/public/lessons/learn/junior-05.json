@@ -1,0 +1,43 @@
+{
+  "id": "junior-05",
+  "module": "junior",
+  "title": "Do You Have a Soccer Ball?",
+  "chapter": "七上 Unit 5",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 5",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Do you have a soccer ball?",
+          "words": [
+            "Do",
+            "you",
+            "have",
+            "a",
+            "soccer",
+            "ball?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "Let us play ping-pong after class.",
+          "words": [
+            "Let",
+            "us",
+            "play",
+            "ping-pong",
+            "after",
+            "class."
+          ]
+        }
+      ]
+    }
+  ]
+}

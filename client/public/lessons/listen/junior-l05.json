@@ -1,0 +1,75 @@
+{
+  "id": "junior-l05",
+  "module": "junior",
+  "title": "Do You Have a Soccer Ball? · 听力",
+  "chapter": "七上 Unit 5",
+  "textbook": "风格参考：人教版《英语》七年级上册 · Unit 5",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "I love sports very much.",
+      "correct": "sports",
+      "choices": [
+        "sports",
+        "spots",
+        "shorts",
+        "sorts"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "We have a tennis racket.",
+      "correct": "tennis",
+      "choices": [
+        "tennis",
+        "dinner",
+        "penny",
+        "badminton"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "He only watches them on TV.",
+      "correct": "watches",
+      "choices": [
+        "watches",
+        "washes",
+        "matches",
+        "catch"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "That sounds interesting.",
+      "correct": "interesting",
+      "choices": [
+        "interesting",
+        "interested",
+        "internet",
+        "instrument"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "It is easy for me.",
+      "correct": "easy",
+      "choices": [
+        "easy",
+        "busy",
+        "lazy",
+        "crazy"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Let us go to the same school.",
+      "correct": "same",
+      "choices": [
+        "same",
+        "some",
+        "seem",
+        "save"
+      ]
+    }
+  ]
+}

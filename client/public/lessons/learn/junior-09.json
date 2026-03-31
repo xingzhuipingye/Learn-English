@@ -1,0 +1,43 @@
+{
+  "id": "junior-09",
+  "module": "junior",
+  "title": "Can You Play the Guitar?",
+  "chapter": "七下 Unit 1",
+  "textbook": "风格参考：人教版《英语》七年级下册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Can you play the guitar?",
+          "words": [
+            "Can",
+            "you",
+            "play",
+            "the",
+            "guitar?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "I want to join the music club.",
+          "words": [
+            "I",
+            "want",
+            "to",
+            "join",
+            "the",
+            "music",
+            "club."
+          ]
+        }
+      ]
+    }
+  ]
+}

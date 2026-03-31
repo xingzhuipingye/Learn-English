@@ -1,0 +1,38 @@
+{
+  "id": "primary-01",
+  "module": "primary",
+  "title": "Hello!",
+  "chapter": "三上 Unit 1",
+  "textbook": "风格参考：人教版（PEP）三年级上册 · Unit 1",
+  "sentences": [
+    {
+      "id": "s1",
+      "phrases": [
+        {
+          "id": "s1-p1",
+          "text": "Hello, I'm Sarah.",
+          "words": [
+            "Hello,",
+            "I'm",
+            "Sarah."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "phrases": [
+        {
+          "id": "s2-p1",
+          "text": "Nice to meet you.",
+          "words": [
+            "Nice",
+            "to",
+            "meet",
+            "you."
+          ]
+        }
+      ]
+    }
+  ]
+}

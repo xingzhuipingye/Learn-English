@@ -1,0 +1,75 @@
+{
+  "id": "senior-l11",
+  "module": "senior",
+  "title": "Festivals and Celebrations · 听力",
+  "chapter": "必修三 Unit 1",
+  "textbook": "风格参考：人教版高中《英语》必修第三册 · Unit 1",
+  "items": [
+    {
+      "id": "i1",
+      "sentence": "Fireworks light up the night sky.",
+      "correct": "Fireworks",
+      "choices": [
+        "Fireworks",
+        "Frameworks",
+        "Firewood",
+        "Firefighter"
+      ]
+    },
+    {
+      "id": "i2",
+      "sentence": "Dragon dances bring good luck.",
+      "correct": "Dragon",
+      "choices": [
+        "Dragon",
+        "Driven",
+        "Drawer",
+        "Drain"
+      ]
+    },
+    {
+      "id": "i3",
+      "sentence": "We exchange red envelopes politely.",
+      "correct": "envelopes",
+      "choices": [
+        "envelopes",
+        "employees",
+        "enemies",
+        "examples"
+      ]
+    },
+    {
+      "id": "i4",
+      "sentence": "The parade moved through downtown.",
+      "correct": "parade",
+      "choices": [
+        "parade",
+        "paradise",
+        "parent",
+        "prepare"
+      ]
+    },
+    {
+      "id": "i5",
+      "sentence": "Harvest festivals thank farmers.",
+      "correct": "Harvest",
+      "choices": [
+        "Harvest",
+        "Hardest",
+        "Harvard",
+        "Harbor"
+      ]
+    },
+    {
+      "id": "i6",
+      "sentence": "Carnivals often include street music.",
+      "correct": "Carnivals",
+      "choices": [
+        "Carnivals",
+        "Cardinals",
+        "Chemicals",
+        "Criminals"
+      ]
+    }
+  ]
+}
