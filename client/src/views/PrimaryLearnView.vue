@@ -333,13 +333,14 @@ const progressLabel = computed(() => {
 
     <Teleport to="body">
       <div v-if="celebrating" class="celebrate" aria-hidden="true">
-        <div class="burst" />
-        <p class="yay">太棒了！</p>
+        <div class="firework firework--left" />
+        <div class="firework firework--right" />
+        <p class="yay">Congratulations!</p>
         <div
-          v-for="n in 24"
+          v-for="n in 28"
           :key="n"
           class="particle"
-          :style="{ '--d': `${(n * 47) % 360}deg`, '--n': n }"
+          :style="{ '--d': `${(n * 31) % 360}deg`, '--n': n }"
         />
       </div>
     </Teleport>
@@ -710,60 +711,107 @@ const progressLabel = computed(() => {
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.88);
 }
 
-.burst {
+.firework {
   position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(192, 132, 252, 0.5), transparent 70%);
-  animation: pop 0.6s ease-out forwards;
+  width: 170px;
+  height: 110px;
+  top: calc(50% - 128px);
+  opacity: 0;
+  animation: fireworks 1.4s ease-out infinite;
+}
+
+.firework::before,
+.firework::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 10deg,
+    #5bbbd3 10deg 14deg,
+    transparent 14deg 32deg,
+    #f87171 32deg 36deg,
+    transparent 36deg 58deg,
+    #67e8f9 58deg 62deg,
+    transparent 62deg 90deg,
+    #fca5a5 90deg 94deg,
+    transparent 94deg 120deg,
+    #60a5fa 120deg 124deg,
+    transparent 124deg 360deg
+  );
+  mask: radial-gradient(circle at 50% 100%, transparent 26%, #000 27% 100%);
+}
+
+.firework::after {
+  transform: scale(0.75);
+  opacity: 0.8;
+}
+
+.firework--left {
+  left: calc(50% - 210px);
+}
+
+.firework--right {
+  right: calc(50% - 210px);
+  animation-delay: 0.2s;
 }
 
 .yay {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   margin: 0;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-h, #111);
-  text-shadow: 0 0 20px #fff;
-  animation: yay 0.5s ease-out;
+  font-size: clamp(2.1rem, 6.2vw, 4.6rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #f8fafc;
+  -webkit-text-stroke: 1.5px #f87171;
+  text-shadow:
+    0 0 0 #fff,
+    4px 4px 0 #67e8f9,
+    8px 8px 0 rgba(15, 23, 42, 0.12);
+  animation: yay 0.6s ease-out;
+  font-family:
+    'Comic Sans MS', 'Marker Felt', 'Bradley Hand', 'Segoe Print', cursive;
 }
 
 .particle {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: hsl(calc(var(--n) * 30), 75%, 55%);
+  width: 14px;
+  height: 14px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 56%, 79% 91%, 50% 70%, 21% 91%, 32% 56%, 2% 35%, 39% 35%);
+  background: hsl(calc(var(--n) * 28), 78%, 62%);
   left: 50%;
   top: 50%;
-  animation: fly 1.2s ease-out forwards;
+  animation: fly 1.15s ease-out forwards;
   transform: translate(-50%, -50%);
-  animation-delay: calc(var(--n) * 0.02s);
+  animation-delay: calc(var(--n) * 0.012s);
 }
 
-@keyframes pop {
+@keyframes fireworks {
   from {
-    transform: scale(0);
-    opacity: 1;
-  }
-  to {
-    transform: scale(4);
     opacity: 0;
+    transform: scale(0.7);
+  }
+  20% {
+    opacity: 0.95;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
   }
 }
 
 @keyframes yay {
   from {
-    transform: scale(0.6);
+    transform: scale(0.72) translateY(8px);
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
     opacity: 1;
   }
 }
@@ -776,6 +824,16 @@ const progressLabel = computed(() => {
   to {
     transform: translate(-50%, -50%) rotate(var(--d)) translateY(-min(45vw, 220px));
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .firework--left {
+    left: calc(50% - 150px);
+  }
+
+  .firework--right {
+    right: calc(50% - 150px);
   }
 }
 </style>

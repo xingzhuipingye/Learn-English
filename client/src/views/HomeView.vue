@@ -129,7 +129,7 @@ onMounted(async () => {
 }
 
 .hero h1 {
-  margin: 0.35rem 0 0.2rem;
+  margin: 0.55rem 0 0.55rem;
   font-size: clamp(1.5rem, 3vw, 2rem);
   color: #111827;
 }
@@ -168,19 +168,26 @@ onMounted(async () => {
 }
 
 .tab {
-  border: 1px solid #bbf7d0;
-  background: #f0fdf4;
-  color: #166534;
+  border: 1px solid #86efac;
+  background: linear-gradient(180deg, #ffffff, #f7fff9);
+  color: #14532d;
   border-radius: 999px;
   font: inherit;
   font-size: 0.86rem;
-  padding: 0.4rem 0.85rem;
+  font-weight: 600;
+  padding: 0.46rem 0.95rem;
   cursor: pointer;
-  transition: all 0.15s ease;
+  box-shadow:
+    0 2px 10px rgba(16, 185, 129, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.7) inset;
+  transition: all 0.18s ease;
 }
 
 .tab:hover {
-  transform: translateY(-1px);
+  transform: translateY(-1px) scale(1.02);
+  box-shadow:
+    0 7px 20px rgba(16, 185, 129, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.7) inset;
 }
 
 .tab.active {
@@ -191,7 +198,7 @@ onMounted(async () => {
 }
 
 .tab.mode {
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .content-head {
@@ -249,11 +256,20 @@ onMounted(async () => {
 .enter {
   text-decoration: none;
   color: #fff;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+  background: linear-gradient(135deg, #22c55e, #16a34a 48%, #10b981);
   border-radius: 999px;
-  padding: 0.34rem 0.7rem;
-  font-size: 0.8rem;
+  padding: 0.42rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.enter:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 12px 22px rgba(22, 163, 74, 0.32);
 }
 
 .meta {
