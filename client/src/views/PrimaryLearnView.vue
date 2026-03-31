@@ -214,6 +214,7 @@ function normalizeKeyForMatch(k: string) {
   return k
 }
 
+/** 仅处理退格：字母数字交给 input（手机英文键盘往往只触发 input，不触发可识别的 keydown） */
 function onTapKeyDown(e: KeyboardEvent) {
   if (celebrating.value || !lesson.value) return
   if (e.metaKey || e.ctrlKey || e.altKey) return
@@ -221,29 +222,27 @@ function onTapKeyDown(e: KeyboardEvent) {
   if (e.key === 'Backspace') {
     e.preventDefault()
     tryBackspace()
+    nextTick(() => clearTapInput())
     return
   }
-
-  const raw = getAcceptableKey(e.key)
-  if (!raw) return
-
-  e.preventDefault()
-  tryAppendChar(e.key)
-  nextTick(() => clearTapInput())
 }
 
-/** 粘贴等多字符输入（单字由 keydown + preventDefault 处理，避免重复） */
+/**
+ * 所有「写入框内」的字符都以 input 为准（含手机英文单键、粘贴）。
+ * 中文拼音组合过程中会多次 input 且 isComposing 为 true，需跳过，避免把拼音字母当答案。
+ */
 function onTapInput(e: Event) {
+  const ie = e as InputEvent
+  if (ie.isComposing) return
+
   const el = e.target as HTMLInputElement
   const v = el.value
-  if (!v || celebrating.value || !lesson.value) {
+  if (!v) return
+  if (celebrating.value || !lesson.value) {
     el.value = ''
     return
   }
-  if (v.length <= 1) {
-    el.value = ''
-    return
-  }
+
   el.value = ''
   for (const ch of v) {
     tryAppendChar(ch)
